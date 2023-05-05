@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./**/*.{html,js}"],
   theme: {
     container: {
@@ -13,6 +14,10 @@ module.exports = {
           // 100: '#F2F9FF',
         },
         dark: {
+          text: "#abb7c4",
+          red: "#dd003f",
+          primary: "#020d18",
+          hover: "#dcf836",
           // for sample
           // 100: '#F8FAFB',
         },

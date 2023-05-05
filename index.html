@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/1a4dd4a998.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Cinephile</title>
+  </head>
+
+  <body
+    class="w-[100vw] h-[100vh] font-dosis font-semibold dark:text-dark-text text-sm"
+  >
+    <header class="w-full min-h-[90%] bg-header bg-cover">
+      <div class="container">
+        <nav class="w-full sticky flex flex-col">
+          <div class="nav-top flex p-2 py-6">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <div class="nav-list w-full flex justify-between">
+              <ul
+                class="nav-list__left flex justify-around content-center flex-wrap gap-4 p-2"
+              >
+                <li><a href="#">HOME</a></li>
+                <li class="group">
+                  <a href="#">MOVIES</a>
+                  <ul class="nested-ul">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Drama</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">CELEBRITIES</a>
+                  <ul class="nested-ul">
+                    <li><a href="#">Actors</a></li>
+                    <li><a href="#">Actresses</a></li>
+                    <li><a href="#">Directors</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+              </ul>
+              <div class="nav-list__righ flex content-center flex-wrap gap-4">
+                <ul
+                  class="flex justify-around content-center flex-wrap gap-4 p-2"
+                >
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">COMMUNITY</a></li>
+                </ul>
+                <button class="button">SIGN UP</button>
+              </div>
+            </div>
+          </div>
+          <div class="nav-bottom">
+            <form class="dark:border-dark-primary bg-[#233a50] border-4">
+              <div class="flex">
+                <select
+                  id="dropdown-button"
+                  class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center border-r-2 dark:border-black dark:text-dark-text bg-transparent"
+                >
+                  <option selected>TV SHOWS</option>
+                  <option value="US">OTHERS</option>
+                </select>
+                <div class="relative w-full">
+                  <input
+                    type="search"
+                    id="search-dropdown"
+                    class="block p-2.5 w-full z-20 text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text"
+                    placeholder="Search for a movie, TV Show or celebrity that you are looking for"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="absolute top-0 right-0 p-2.5 text-sm font-medium dark:text-dark-text"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div class="social-link flex w-full justify-end my-2 gap-2">
+          <p>FALLOW US:</p>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-facebook fa-md fa-fw hover:text-dark-hover"></i>
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-twitter fa-md fa-fw hover:text-dark-hover"></i>
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-google fa-md fa-fw hover:text-dark-hover"></i>
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-youtube fa-md fa-fw hover:text-dark-hover"></i>
+          </a>
+        </div>
+        <div class="slider flex overflow-x-scroll scroll-snap-x-mandatory">
+          <div
+            class="slider-images flex gap-4 scroll-snap-align-center w-full mb-2"
+          >
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider1.jpg"
+            />
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider2.jpg"
+            />
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider3.jpg"
+            />
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider4.jpg"
+            />
+
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider1.jpg"
+            />
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider2.jpg"
+            />
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider3.jpg"
+            />
+            <img
+              class="slider-image flex-shrink-0 object-cover rounded-lg"
+              src="./assets/images/slider4.jpg"
+            />
+            <!-- add more images as needed -->
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

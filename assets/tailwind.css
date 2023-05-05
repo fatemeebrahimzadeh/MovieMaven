@@ -46,3 +46,29 @@
 }
 
 /* font Dosis */
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #233a50;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #abb7c4;
+}
+
+/* scrollbar */
+
+@layer components {
+    .button {
+        @apply dark:bg-dark-red rounded-full px-6 py-3 text-white;
+    }
+
+    .nested-ul {
+        @apply hidden;
+    }
+}
