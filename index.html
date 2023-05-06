@@ -15,7 +15,7 @@
   <body
     class="w-[100vw] h-[100vh] font-dosis font-semibold dark:text-dark-text text-sm dark:bg-dark-primary"
   >
-    <header class="w-full min-h-[90%] bg-header bg-cover">
+    <header class="w-full min-h-[90%] dark:bg-header bg-cover">
       <div class="container">
         <nav class="w-full sticky flex flex-col">
           <div class="nav-top flex p-2 py-6">
@@ -550,5 +550,134 @@
         </section>
       </div>
     </main>
+    <footer class="dark:bg-footer bg-cover py-10">
+      <div class="container flex justify-between">
+        <section class="flex flex-col gap-5 basis-1/5 justify-between">
+          <img
+            class="!max-w-[119px]"
+            src="./assets/images/logo.png"
+            alt="logo"
+          />
+          <div class="info basis-1/5 grid gap-5">
+            <p class="font-extralight">
+              5th Avenue st, manhattan
+              <br />
+              New York, NY 10001
+            </p>
+            <p class="font-extralight">
+              Call us:
+              <a class="dark:text-white dark:hover:text-dark-hovered" href="#"
+                >(+01) 202 342 6789</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Resources</h4>
+          <ul class="flex flex-col items-baseline gap-3">
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Blockbuster</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Forums</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Help Center</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Legal</h4>
+          <ul class="flex flex-col items-baseline gap-3">
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Tetn Of Use</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Security</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Account</h4>
+          <ul class="flex flex-col items-baseline gap-3">
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >My Account</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Watchlist</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >Collections</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-hovered font-extralight"
+                >User Guide</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Newsletter</h4>
+          <p class="font-extralight">
+            Subscribe to our newsletter system now
+            <br />
+            to get latest news from us.
+          </p>
+          <div class="relative w-full">
+            <input
+              type="email"
+              class="block w-full z-20 text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] border-dark-border rounded-sm px-5 py-1 placeholder:font-extralight"
+              placeholder="Enter your email"
+              required
+            />
+            <button
+              type="submit"
+              class="absolute top-0 right-0 p-1 text-base font-extralight dark:text-dark-text"
+            >
+              <i class="fa fa-envelope fa-sm fa-fw"></i>
+            </button>
+          </div>
+          <a class="text-xs dark:text-dark-red" href="#"
+            >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
+          ></a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
