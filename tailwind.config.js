@@ -16,10 +16,11 @@ module.exports = {
         dark: {
           text: "#abb7c4",
           red: "#dd003f",
+          blue: "#4280bf",
           primary: "#020d18",
           secondary: "#0b1a2a",
-          triority: "#1c3d5d",
-          hover: "#dcf836",
+          selected: "#1c3d5d",
+          hovered: "#dcf836",
           // for sample
           // 100: '#F8FAFB',
         },
