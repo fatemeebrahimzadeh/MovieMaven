@@ -48,9 +48,9 @@
                 <ul
                   class="flex justify-around content-center flex-wrap gap-4 p-2"
                 >
-                  <li><a href="#">HOME</a></li>
-                  <li><a href="#">NEWS</a></li>
-                  <li><a href="#">COMMUNITY</a></li>
+                  <li><a href="#">PAGES</a></li>
+                  <li><a href="#">HELP</a></li>
+                  <li><a href="#">LOG IN</a></li>
                 </ul>
                 <button class="button">SIGN UP</button>
               </div>
@@ -662,7 +662,7 @@
           <div class="relative w-full">
             <input
               type="email"
-              class="block w-full z-20 text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] border-dark-border rounded-sm px-5 py-1 placeholder:font-extralight"
+              class="block w-full text-sm bg-transparent dark:placeholder-dark-text border-[1px] border-dark-border rounded-sm px-5 py-1 placeholder:font-extralight"
               placeholder="Enter your email"
               required
             />
@@ -679,5 +679,51 @@
         </section>
       </div>
     </footer>
+    <!-- signup form popup -->
+    <section
+      class="invisible overlay fixed w-screen h-screen top-0 left-0 flex items-center justify-center dark:bg-dark-backdrop font-dosis"
+    >
+      <div
+        class="signup-content dark:bg-white w-96 flex flex-col items-center p-5"
+      >
+        <h2 class="text-black text-2xl font-dosis">SIGN UP</h2>
+        <form action="#" class="w-full p-5">
+          <label class="text-black" for="username">USERNAME:</label>
+          <input
+            name="username"
+            type="text"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <label class="text-black" for="email">YOUR EMAIL:</label>
+          <input
+            name="email"
+            type="email"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <label class="text-black" for="password">PASSWORD:</label>
+          <input
+            name="password"
+            type="password"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <label class="text-black" for="retype-password"
+            >RE-TYPE PASSWORD:</label
+          >
+          <input
+            name="retype-password"
+            type="password"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <button class="w-full bg-dark-red px-5 py-3 text-white" type="submit">
+            SIGN UP
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- end signup form popup -->
   </body>
 </html>

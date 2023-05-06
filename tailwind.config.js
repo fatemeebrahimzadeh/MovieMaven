@@ -22,6 +22,7 @@ module.exports = {
           selected: "#1c3d5d",
           hovered: "#dcf836",
           border: "#405266",
+          backdrop: "rgba(0, 0, 0, 0.75)",
           // for sample
           // 100: '#F8FAFB',
         },
