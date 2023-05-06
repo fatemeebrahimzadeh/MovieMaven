@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/1a4dd4a998.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>MovieMaven</title>
+  </head>
+
+  <body
+    class="w-[100vw] h-[100vh] font-dosis font-semibold dark:text-dark-text text-sm dark:bg-dark-primary"
+  >
+    <header class="w-full h-96 dark:bg-header bg-no-repeat">
+      <div class="container flex flex-col items-center h-full">
+        <nav class="w-full sticky flex flex-col">
+          <div class="nav-top flex p-2 py-6">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <div class="nav-list w-full flex justify-between">
+              <ul
+                class="nav-list__left flex justify-around content-center flex-wrap gap-4 p-2"
+              >
+                <li><a href="#">HOME</a></li>
+                <li class="group">
+                  <a href="#">MOVIES</a>
+                  <ul class="nested-ul">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Drama</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">CELEBRITIES</a>
+                  <ul class="nested-ul">
+                    <li><a href="#">Actors</a></li>
+                    <li><a href="#">Actresses</a></li>
+                    <li><a href="#">Directors</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+              </ul>
+              <div class="nav-list__righ flex content-center flex-wrap gap-4">
+                <ul
+                  class="flex justify-around content-center flex-wrap gap-4 p-2"
+                >
+                  <li><a href="#">PAGES</a></li>
+                  <li><a href="#">HELP</a></li>
+                  <li><a href="#">LOG IN</a></li>
+                </ul>
+                <button class="button">SIGN UP</button>
+              </div>
+            </div>
+          </div>
+          <div class="nav-bottom">
+            <form class="dark:border-dark-primary bg-[#233a50] border-4">
+              <div class="flex">
+                <select
+                  id="dropdown-button"
+                  class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center border-r-2 dark:border-black dark:text-dark-text bg-transparent"
+                >
+                  <option selected>TV SHOWS</option>
+                  <option value="US">OTHERS</option>
+                </select>
+                <div class="relative w-full">
+                  <input
+                    type="search"
+                    id="search-dropdown"
+                    class="block p-2.5 w-full z-20 text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text"
+                    placeholder="Search for a movie, TV Show or celebrity that you are looking for"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="absolute top-0 right-0 p-2.5 text-sm font-medium dark:text-dark-text"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div class="flex flex-col items-center justify-center gap-5 h-full">
+          <h1 class="text-4xl dark:text-white">FAVORITE MOVIES</h1>
+          <ul class="flex gap-2">
+            <li class="dark:text-dark-blue">HOME</li>
+            <!-- TODO: -->
+            <!-- <i class="fa fa-chevron-right fa-sm fa-fw"></i> -->
+            <li class="before:content[]">FAVORITE MOVIES</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="py-10">
+      <div class="container flex gap-10">
+        <div class="basis-2/3">
+          <div
+            class="filter border-t-[1px] border-b-[1px] border-dark-border flex text-xs h-8"
+          >
+            <div
+              class="flex justify-between items-center p-1 font-extralight border-r-[1px] border-dark-border basis-1/2"
+            >
+              <span
+                >Found <span class="dark:text-dark-blue">1,608 movies</span> in
+                total</span
+              >
+              <span>Sort by:</span>
+            </div>
+            <select
+              class="basis-1/3 font-extralight flex-shrink-0 inline-flex items-center h-full text-center border-r-[1px] border-dark-border dark:text-dark-text bg-transparent"
+            >
+              <option value="popularity">Popularity Descending</option>
+              <option value="popularity">Popularity Ascending</option>
+              <option value="rating">Rating Descending</option>
+              <option value="rating">Rating Ascending</option>
+              <option value="date">Release date Descending</option>
+              <option value="date">Release date Ascending</option>
+            </select>
+            <a
+              class="basis-1/12 dark:hover:text-dark-yellow flex items-center justify-center border-r-[1px] border-dark-border"
+              href="#"
+            >
+              <i class="fa fa-fw fa-sm fa-list"></i>
+            </a>
+            <a
+              class="basis-1/12 dark:hover:text-dark-yellow flex items-center justify-center"
+              href="#"
+            >
+              <i class="fa fa-fw fa-sm fa-th"></i>
+            </a>
+          </div>
+          <section class="movie-list grid gap-5 py-10">
+            <article class="flex gap-3">
+              <img class="rounded-md" src="./assets/images/mv1.jpg" alt="mv1" />
+              <div class="p-3 flex flex-col gap-3">
+                <h4>
+                  <span class="dark:text-white dark:hover:text-dark-yellow">
+                    OBLIVION</span
+                  >
+                  (2012)
+                </h4>
+                <span class="star flex items-baseline">
+                  <i class="fa-fw fa-md fa-star text-dark-yellow fa"></i>
+                  <span class="text-white text-lg">8.1</span>
+                  <span>/10</span>
+                </span>
+                <p class="overflow-ellipsis font-extralight">
+                  Earth's mightiest heroes must come together and learn to fight
+                  as a team if they are to stop the mischievous Loki and his
+                  alien army from enslaving humanity...
+                </p>
+                <span class="flex justify-between font-extralight">
+                  <span>Run Time: 2h21’</span>
+                  <span>.</span>
+                  <span>MMPA: PG-13 </span>
+                  <span>.</span>
+                  <span>Release: 1 May 2015</span>
+                </span>
+                <span class="font-extralight"
+                  >Director:
+                  <span class="dark:text-dark-blue">Joss Whedon</span></span
+                >
+                <span class="font-extralight"
+                  >Stars:
+                  <span class="dark:text-dark-blue flex">
+                    <span class="dark:hover:text-dark-yellow"
+                      >Robert Downey Jr.</span
+                    >
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow">Chris Evans</span>
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow"
+                      >Chris Hemsworth</span
+                    >
+                  </span></span
+                >
+              </div>
+            </article>
+            <article class="flex gap-3">
+              <img class="rounded-md" src="./assets/images/mv2.jpg" alt="mv2" />
+              <div class="p-3 flex flex-col gap-3">
+                <h4>
+                  <span class="dark:text-white dark:hover:text-dark-yellow">
+                    INTO THE WILD</span
+                  >
+                  (2014)
+                </h4>
+                <span class="star flex items-baseline">
+                  <i class="fa-fw fa-md fa-star text-dark-yellow fa"></i>
+                  <span class="text-white text-lg">7.8</span>
+                  <span>/10</span>
+                </span>
+                <p class="overflow-ellipsis font-extralight">
+                  As Steve Rogers struggles to embrace his role in the modern
+                  world, he teams up with a fellow Avenger and S.H.I.E.L.D
+                  agent, Black Widow, to battle a new threat...
+                </p>
+                <span class="flex justify-between font-extralight">
+                  <span>Run Time: 2h21’</span>
+                  <span>.</span>
+                  <span>MMPA: PG-13 </span>
+                  <span>.</span>
+                  <span>Release: 1 May 2015</span>
+                </span>
+                <span class="font-extralight"
+                  >Director:
+                  <span class="dark:text-dark-blue">
+                    Anthony Russo,Joe Russo</span
+                  ></span
+                >
+                <span class="font-extralight"
+                  >Stars:
+                  <span class="dark:text-dark-blue flex">
+                    <span class="dark:hover:text-dark-yellow"
+                      >Robert Downey Jr.</span
+                    >
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow">Chris Evans</span>
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow"
+                      >Scarlett Johansson</span
+                    >
+                  </span>
+                </span>
+              </div>
+            </article>
+            <article class="flex gap-3">
+              <img class="rounded-md" src="./assets/images/mv3.jpg" alt="mv3" />
+              <div class="p-3 flex flex-col gap-3">
+                <h4>
+                  <span class="dark:text-white dark:hover:text-dark-yellow">
+                    BLADE RUNNER</span
+                  >
+                  (2015)
+                </h4>
+                <span class="star flex items-baseline">
+                  <i class="fa-fw fa-md fa-star text-dark-yellow fa"></i>
+                  <span class="text-white text-lg">7.3</span>
+                  <span>/10</span>
+                </span>
+                <p class="overflow-ellipsis font-extralight">
+                  Armed with a super-suit with the astonishing ability to shrink
+                  in scale but increase in strength, cat burglar Scott Lang must
+                  embrace his inner hero and help...
+                </p>
+                <span class="flex justify-between font-extralight">
+                  <span>Run Time: 2h21’</span>
+                  <span>.</span>
+                  <span>MMPA: PG-13 </span>
+                  <span>.</span>
+                  <span>Release: 1 May 2015</span>
+                </span>
+                <span class="font-extralight"
+                  >Director:
+                  <span class="dark:text-dark-blue">Peyton Reed</span></span
+                >
+                <span class="font-extralight"
+                  >Stars:
+                  <span class="dark:text-dark-blue flex">
+                    <span class="dark:hover:text-dark-yellow">Paul Rudd</span>
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow">
+                      Michael Douglas</span
+                    >
+                  </span>
+                </span>
+              </div>
+            </article>
+            <article class="flex gap-3">
+              <img class="rounded-md" src="./assets/images/mv4.jpg" alt="mv4" />
+              <div class="p-3 flex flex-col gap-3">
+                <h4>
+                  <span class="dark:text-white dark:hover:text-dark-yellow">
+                    MULHOLLAND PRIDE</span
+                  >
+                  (2013)
+                </h4>
+                <span class="star flex items-baseline">
+                  <i class="fa-fw fa-md fa-star text-dark-yellow fa"></i>
+                  <span class="text-white text-lg">7.2</span>
+                  <span>/10</span>
+                </span>
+                <p class="overflow-ellipsis font-extralight">
+                  When Tony Stark's world is torn apart by a formidable
+                  terrorist called the Mandarin, he starts an odyssey of
+                  rebuilding and retribution.
+                </p>
+                <span class="flex justify-between font-extralight">
+                  <span>Run Time: 2h21’</span>
+                  <span>.</span>
+                  <span>MMPA: PG-13 </span>
+                  <span>.</span>
+                  <span>Release: 1 May 2015</span>
+                </span>
+                <span class="font-extralight"
+                  >Director:
+                  <span class="dark:text-dark-blue">Shane Black</span></span
+                >
+                <span class="font-extralight"
+                  >Stars:
+                  <span class="dark:text-dark-blue flex">
+                    <span class="dark:hover:text-dark-yellow"
+                      >Robert Downey Jr.</span
+                    >
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow"> Guy Pearce</span>
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow">
+                      Don Cheadle</span
+                    >
+                  </span>
+                </span>
+              </div>
+            </article>
+            <article class="flex gap-3">
+              <img class="rounded-md" src="./assets/images/mv5.jpg" alt="mv5" />
+              <div class="p-3 flex flex-col gap-3">
+                <h4>
+                  <span class="dark:text-white dark:hover:text-dark-yellow">
+                    SKYFALL: EVIL OF BOSS</span
+                  >
+                  (2013)
+                </h4>
+                <span class="star flex items-baseline">
+                  <i class="fa-fw fa-md fa-star text-dark-yellow fa"></i>
+                  <span class="text-white text-lg">7.0</span>
+                  <span>/10</span>
+                </span>
+                <p class="overflow-ellipsis font-extralight">
+                  When Tony Stark's world is torn apart by a formidable
+                  terrorist called the Mandarin, he starts an odyssey of
+                  rebuilding and retribution.
+                </p>
+                <span class="flex justify-between font-extralight">
+                  <span>Run Time: 2h21’</span>
+                  <span>.</span>
+                  <span>MMPA: PG-13 </span>
+                  <span>.</span>
+                  <span>Release: 1 May 2015</span>
+                </span>
+                <span class="font-extralight"
+                  >Director:
+                  <span class="dark:text-dark-blue">Alan Taylor</span></span
+                >
+                <span class="font-extralight"
+                  >Stars:
+                  <span class="dark:text-dark-blue flex">
+                    <span class="dark:hover:text-dark-yellow"
+                      >Chris Hemsworth</span
+                    >
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow"
+                      >Natalie Portman</span
+                    >
+                    <span>,</span>
+                    <span class="dark:hover:text-dark-yellow">
+                      Tom Hiddleston</span
+                    >
+                  </span>
+                </span>
+              </div>
+            </article>
+          </section>
+          <div
+            class="pagination border-t-[1px] border-b-[1px] border-dark-border flex text-xs h-8"
+          >
+            <span
+              class="flex items-center p-1 font-extralight border-r-[1px] border-dark-border basis-1/4"
+            >
+              Movies per page:
+            </span>
+            <select
+              class="basis-1/4 font-extralight flex-shrink-0 inline-flex items-center h-full text-center border-r-[1px] border-dark-border dark:text-dark-text bg-transparent"
+            >
+              <option value="range">5 Movies</option>
+              <option value="saab">10 Movies</option>
+            </select>
+            <div class="basis-1/2 flex items-center justify-end gap-3">
+              Page 1 of 2:
+              <span class="text-dark-blue dark:hover:text-dark-yellow">1</span>
+              <span class="text-dark-blue dark:hover:text-dark-yellow">2</span>
+              <i
+                class="fa fa-fw fa-sm fa-chevron-right text-dark-blue dark:hover:text-dark-yellow"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <aside class="flex flex-col gap-5 basis-1/3">
+          <section class="search grid gap-5">
+            <h3 class="dark:text-white text-lg">
+              SEARCH FOR MOVIE
+              <hr class="h-1" />
+            </h3>
+            <div
+              class="search-form dark:bg-dark-secondary border-2 border-dark-border2 flex flex-col items-center p-5"
+            >
+              <form action="#" class="w-full p-1">
+                <label class="text-xs" for="movie-name">Movie name:</label>
+                <input
+                  name="movie-name"
+                  type="text"
+                  class="block w-full bg-dark-triority dark:placeholder-dark-text dark:text-dark-text rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-xs"
+                  required
+                  placeholder="Enter keywords"
+                />
+                <label class="text-xs" for="skills">Genres & Subgenres:</label>
+                <select
+                  name="skills"
+                  class="flex-shrink-0 inline-flex font-medium text-center w-full bg-dark-triority dark:placeholder-dark-text dark:text-dark-text rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-xs"
+                >
+                  <option selected value="">Enter to filter genres</option>
+                  <option value="Action1">Action 1</option>
+                  <option value="Action2">Action 2</option>
+                  <option value="Action3">Action 3</option>
+                  <option value="Action4">Action 4</option>
+                  <option value="Action5">Action 5</option>
+                </select>
+                <label class="text-xs" for="range">Rating Range</label>
+                <select
+                  name="skills"
+                  class="flex-shrink-0 inline-flex font-medium text-center w-full bg-dark-triority dark:placeholder-dark-text dark:text-dark-text rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-xs"
+                >
+                  <option value="range">
+                    -- Select the rating range below --
+                  </option>
+                  <option value="saab">
+                    -- Select the rating range below --
+                  </option>
+                  <option value="saab">
+                    -- Select the rating range below --
+                  </option>
+                  <option value="saab">
+                    -- Select the rating range below --
+                  </option>
+                </select>
+                <label class="text-xs" for="year">Release Year:</label>
+                <div class="flex justify-between gap-5">
+                  <select
+                    name="skills"
+                    class="flex-shrink-0 inline-flex font-medium text-center basis-[45%] bg-dark-triority dark:placeholder-dark-text dark:text-dark-text rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-xs"
+                  >
+                    <option value="range">From</option>
+                    <option value="number">10</option>
+                    <option value="number">20</option>
+                    <option value="number">30</option>
+                  </select>
+                  <select
+                    name="skills"
+                    class="flex-shrink-0 inline-flex font-medium text-center basis-[45%] bg-dark-triority dark:placeholder-dark-text dark:text-dark-text rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-xs"
+                  >
+                    <option value="range">To</option>
+                    <option value="number">20</option>
+                    <option value="number">30</option>
+                    <option value="number">40</option>
+                  </select>
+                </div>
+                <button
+                  class="w-full bg-dark-red px-5 py-3 text-white"
+                  type="submit"
+                >
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </section>
+          <img src="./assets/images/ads1.png" alt="ads" />
+          <div class="h-full">
+            <section class="facebook min-h-[50%]">
+              <h3 class="dark:text-white text-lg">
+                FIND US ON FACEBOOK
+                <hr class="h-1" />
+              </h3>
+            </section>
+            <section class="facebook min-h-[50%]">
+              <h3 class="dark:text-white text-lg">
+                TWITTER TO US
+                <hr class="h-1" />
+              </h3>
+            </section>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="dark:bg-footer bg-cover py-10">
+      <div class="container flex justify-between">
+        <section class="flex flex-col gap-5 basis-1/5 justify-between">
+          <img
+            class="!max-w-[119px]"
+            src="./assets/images/logo.png"
+            alt="logo"
+          />
+          <div class="info basis-1/5 grid gap-5">
+            <p class="font-extralight">
+              5th Avenue st, manhattan
+              <br />
+              New York, NY 10001
+            </p>
+            <p class="font-extralight">
+              Call us:
+              <a class="dark:text-white dark:hover:text-dark-yellow" href="#"
+                >(+01) 202 342 6789</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Resources</h4>
+          <ul class="flex flex-col items-baseline gap-3">
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Blockbuster</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Forums</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Help Center</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Legal</h4>
+          <ul class="flex flex-col items-baseline gap-3">
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Term Of Use</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Security</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Account</h4>
+          <ul class="flex flex-col items-baseline gap-3">
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >My Account</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Watchlist</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >Collections</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dark:hover:text-dark-yellow font-extralight"
+                >User Guide</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="grid gap-5 basis-1/5">
+          <h4 class="dark:text-white text-lg">Newsletter</h4>
+          <p class="font-extralight">
+            Subscribe to our newsletter system now
+            <br />
+            to get latest news from us.
+          </p>
+          <div class="relative w-full">
+            <input
+              type="email"
+              class="block w-full text-sm bg-transparent dark:placeholder-dark-text border-[1px] border-dark-border rounded-sm px-5 py-1 placeholder:font-extralight"
+              placeholder="Enter your email"
+              required
+            />
+            <button
+              type="submit"
+              class="absolute top-0 right-0 p-1 text-base font-extralight dark:text-dark-text"
+            >
+              <i class="fa fa-envelope fa-sm fa-fw"></i>
+            </button>
+          </div>
+          <a class="text-xs dark:text-dark-red" href="#"
+            >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
+          ></a>
+        </section>
+      </div>
+    </footer>
+    <!-- signup form popup -->
+    <section
+      class="invisible overlay fixed w-screen h-screen top-0 left-0 flex items-center justify-center dark:bg-dark-backdrop font-dosis"
+    >
+      <div
+        class="signup-content dark:bg-white w-96 flex flex-col items-center p-5"
+      >
+        <h2 class="text-black text-2xl font-dosis">SIGN UP</h2>
+        <form action="#" class="w-full p-5">
+          <label class="text-black" for="username">USERNAME:</label>
+          <input
+            name="username"
+            type="text"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <label class="text-black" for="email">YOUR EMAIL:</label>
+          <input
+            name="email"
+            type="email"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <label class="text-black" for="password">PASSWORD:</label>
+          <input
+            name="password"
+            type="password"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <label class="text-black" for="retype-password"
+            >RE-TYPE PASSWORD:</label
+          >
+          <input
+            name="retype-password"
+            type="password"
+            class="block w-full text-sm bg-transparent dark:placeholder-dark-text dark:text-dark-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5 text-black"
+            required
+          />
+          <button class="w-full bg-dark-red px-5 py-3 text-white" type="submit">
+            SIGN UP
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- end signup form popup -->
+  </body>
+</html>

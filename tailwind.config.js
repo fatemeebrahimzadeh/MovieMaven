@@ -20,8 +20,10 @@ module.exports = {
           yellow: "#dcf836",
           primary: "#020d18",
           secondary: "#0b1a2a",
+          triority: "#233a50",
           selected: "#1c3d5d",
           border: "#405266",
+          border2: "#0f2133",
           backdrop: "rgba(0, 0, 0, 0.75)",
           // for sample
           // 100: '#F8FAFB',
