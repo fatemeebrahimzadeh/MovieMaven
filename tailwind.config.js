@@ -17,10 +17,10 @@ module.exports = {
           text: "#abb7c4",
           red: "#dd003f",
           blue: "#4280bf",
+          yellow: "#dcf836",
           primary: "#020d18",
           secondary: "#0b1a2a",
           selected: "#1c3d5d",
-          hovered: "#dcf836",
           border: "#405266",
           backdrop: "rgba(0, 0, 0, 0.75)",
           // for sample
