@@ -19,16 +19,16 @@ This will start a development server and watch for changes to your tailwind.css 
 Git Hooks
 This project uses Husky to enforce commit conventions and prevent pushes to the master branch. Before you make a commit, Husky will run a pre-commit hook to ensure that your commit message follows the format type(scope): message, where type is one of the following:
 
-build: Changes which affect CI configuration files and scripts
-chore: Changes which aren't user-facing
-enh: Changes which improve a feature
-docs: Changes which affect documentation
-feat: Changes which introduce a new feature
-fix: Changes which patch a bug
-perf: changes which improve performance
-refactor: Changes which neither fix a bug nor add a feature
-revert: Changes which revert a previous commit
-style: Changes which don't affect code logic, such as white-spaces, formatting, missing semi-colons
+build: Changes which affect CI configuration files and scripts,
+chore: Changes which aren't user-facing,
+enh: Changes which improve a feature,
+docs: Changes which affect documentation,
+feat: Changes which introduce a new feature,
+fix: Changes which patch a bug,
+perf: changes which improve performance,
+refactor: Changes which neither fix a bug nor add a feature,
+revert: Changes which revert a previous commit,
+style: Changes which don't affect code logic, such as white-spaces, formatting, missing semi-colons,
 test: Changes which add missing tests or correct existing tests
 
 scope is optional and should be used when the change affects a specific part of the codebase. message should be a short, descriptive summary of the change.
