@@ -22,11 +22,15 @@ module.exports = {
           secondary: "#0b1a2a",
           triority: "#233a50",
           selected: "#1c3d5d",
-          border: "#405266",
-          border2: "#0f2133",
           backdrop: "rgba(0, 0, 0, 0.75)",
           // for sample
           // 100: '#F8FAFB',
+        },
+      },
+      borderColor: {
+        dark: {
+          100: "#405266",
+          800: "#0f2133",
         },
       },
       fontFamily: {
