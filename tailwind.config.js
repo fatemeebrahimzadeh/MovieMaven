@@ -34,6 +34,7 @@ module.exports = {
       },
       backgroundImage: {
         header: "url('/assets/images/header-bg.jpg')",
+        singleMovieHeader: "url('/assets/images/hero-bg.jpg')",
         footer: "url('/assets/images/ft-bg.jpg')",
       },
     },
