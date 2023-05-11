@@ -759,11 +759,6 @@ video {
   margin-right: auto;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .-mt-80 {
   margin-top: -20rem;
 }
@@ -968,10 +963,6 @@ video {
   min-height: 50%;
 }
 
-.min-h-\[90\%\] {
-  min-height: 90%;
-}
-
 .w-1 {
   width: 0.25rem;
 }
@@ -988,20 +979,12 @@ video {
   width: 1.5rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .w-96 {
   width: 24rem;
 }
 
 .w-\[100vw\] {
   width: 100vw;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .w-\[90\%\] {
@@ -3159,24 +3142,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:gap-5 {
-    gap: 1.25rem;
   }
 }
 
@@ -3195,6 +3162,10 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
   }
 
   .lg\:w-auto {
@@ -3217,5 +3188,17 @@ video {
 
   :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover) {
     paint-order: markers;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-\[400px\] {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-\[600px\] {
+    width: 600px;
   }
 }
