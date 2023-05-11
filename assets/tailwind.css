@@ -67,8 +67,4 @@
     .button {
         @apply dark:bg-dark-red rounded-full px-6 py-3 text-white;
     }
-
-    .nested-ul {
-        @apply hidden;
-    }
 }
