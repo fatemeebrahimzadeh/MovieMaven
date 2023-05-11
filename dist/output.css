@@ -1071,6 +1071,10 @@ video {
   flex-basis: 70%;
 }
 
+.basis-\[100\%\] {
+  flex-basis: 100%;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -3136,6 +3140,38 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:basis-\[100\%\] {
+    flex-basis: 100%;
+  }
+
+  .sm\:basis-\[50\%\] {
+    flex-basis: 50%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
