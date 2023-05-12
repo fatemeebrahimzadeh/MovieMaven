@@ -8,16 +8,21 @@ module.exports = {
       padding: "5rem",
     },
     extend: {
+      boxShadow: {
+        "inset-custom": "inset -5px -50px 100px -15px #000000",
+      },
       colors: {
+        red: "#dd003f",
+        text: "#abb7c4",
+        blue: "#4280bf",
+        yellow: "#dcf836",
         light: {
-          // for sample
-          // 100: '#F2F9FF',
+          primary: "#ffffff",
+          backgroundColor: "#f2f6f8",
+          secondary: "#d9e6ec",
+          selected: "#c8d9e1",
         },
         dark: {
-          text: "#abb7c4",
-          red: "#dd003f",
-          blue: "#4280bf",
-          yellow: "#dcf836",
           primary: "#020d18",
           secondary: "#0b1a2a",
           triority: "#233a50",
