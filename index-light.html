@@ -91,13 +91,80 @@
               <ul
                 class="flex flex-col items-center p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0"
               >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    aria-current="page"
-                    >HOME</a
+                <li class="group relative">
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
                   >
+                    PAGES
+                    <svg
+                      class="w-5 h-5 ml-1"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar"
+                    class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-400"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="./index-light.html"
+                          class="block px-4 py-2 hover:text-yellow"
+                          >HOME LIGHT</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./single-movie.html"
+                          class="block px-4 py-2 hover:text-yellow"
+                          >SINGLE MOVIE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./single-movie-light.html"
+                          class="block px-4 py-2 hover:text-yellow"
+                          >LIGHT SINGLE MOVIE</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./favorite-movies.html"
+                          class="block px-4 py-2 hover:text-yellow"
+                          >FAVORITE MOVIES</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./favorite-movie-light.html"
+                          class="block px-4 py-2 hover:text-yellow"
+                          >LIGHT FAVORITE MOVIES</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./edit-profile.html"
+                          class="block px-4 py-2 hover:text-yellow"
+                          >EDIT PROFILE</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="group relative">
                   <button
@@ -210,7 +277,7 @@
                   >
                 </li>
                 <li>
-                  <button class="button">SIGN UP</button>
+                  <a href="./signup-popup.html" class="button">SIGN UP</a>
                 </li>
               </ul>
             </div>
@@ -537,7 +604,9 @@
         <div class="container flex flex-col gap-5 md:flex-row">
           <div class="w-full flex flex-col gap-5">
             <section class="movie">
-              <header class="flex justify-between mb-5">
+              <header
+                class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 sm:items-center"
+              >
                 <h2 class="text-black dark:text-white text-3xl">IN THEATER</h2>
                 <a
                   class="text-sm hover:text-red dark:hover:text-yellow"
@@ -562,19 +631,19 @@
                     #MOST REVIEWID
                   </li>
                 </ul>
-                <div class="movie-list flex gap-4">
+                <div class="movie-list flex flex-wrap gap-4">
                   <div class="movie-item relative group">
                     <img
                       class="flex-shrink-0 object-cover"
                       src="./assets/images/mv-item1.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">Interstellar</a>
@@ -591,12 +660,12 @@
                       src="./assets/images/mv-item2.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">The revenant</a>
@@ -613,12 +682,12 @@
                       src="./assets/images/mv-item3.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">The walk</a>
@@ -635,12 +704,12 @@
                       src="./assets/images/mv-item4.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">The walk</a>
@@ -655,7 +724,9 @@
               </section>
             </section>
             <section class="tv">
-              <header class="flex justify-between mb-5">
+              <header
+                class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 sm:items-center"
+              >
                 <h2 class="text-black dark:text-white text-3xl">ON TV</h2>
                 <a
                   class="text-sm hover:hover:text-red dark:hover:text-yellow"
@@ -678,19 +749,19 @@
                     #MOST REVIEWID
                   </li>
                 </ul>
-                <div class="movie-list flex gap-4">
+                <div class="movie-list flex flex-wrap gap-4">
                   <div class="movie-item relative group">
                     <img
                       class="flex-shrink-0 object-cover"
                       src="./assets/images/mv-item5.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">Interstellar</a>
@@ -707,12 +778,12 @@
                       src="./assets/images/mv-item6.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">The revenant</a>
@@ -729,12 +800,12 @@
                       src="./assets/images/mv-item7.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">Die hard</a>
@@ -751,12 +822,12 @@
                       src="./assets/images/mv-item8.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
                       <button class="button">READ MORE</button>
                     </div>
                     <div
-                      class="movie-item__title-in absolute left-0 bottom-0 pl-4 pb-4"
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
                     >
                       <h6 class="text-white text-xl group-hover:text-yellow">
                         <a href="#">The walk</a>
@@ -860,9 +931,13 @@
       </section>
       <section class="my-10 bg-light-backgroundColor dark:bg-transparent">
         <div class="container py-10">
-          <header class="flex justify-between mb-5 py-10">
-            <h2 class="text-black dark:text-white text-lg">IN THEATER</h2>
-            <a class="text-sm hover:text-red dark:hover:text-yellow" href="#"
+          <header
+            class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 py-10 sm:items-center"
+          >
+            <h2 class="text-black dark:text-white text-3xl">ON TV</h2>
+            <a
+              class="text-sm hover:hover:text-red dark:hover:text-yellow"
+              href="#"
               >VIEW ALL <i class="fa fa-chevron-right fa-sm fa-fw"></i
             ></a>
           </header>
