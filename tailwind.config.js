@@ -1,20 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./**/*.{html,js}"],
   theme: {
     container: {
       center: true,
-      padding: "10rem",
+      padding: "5rem",
     },
     extend: {
+      boxShadow: {
+        "inset-custom": "inset -5px -50px 100px -15px #000000",
+      },
       colors: {
+        red: "#dd003f",
+        text: "#abb7c4",
+        blue: "#4280bf",
+        yellow: "#dcf836",
         light: {
-          // for sample
-          // 100: '#F2F9FF',
+          primary: "#ffffff",
+          backgroundColor: "#f2f6f8",
+          secondary: "#d9e6ec",
+          selected: "#c8d9e1",
         },
         dark: {
+          primary: "#020d18",
+          secondary: "#0b1a2a",
+          triority: "#233a50",
+          selected: "#1c3d5d",
+          backdrop: "rgba(0, 0, 0, 0.75)",
           // for sample
           // 100: '#F8FAFB',
+        },
+      },
+      borderColor: {
+        dark: {
+          100: "#405266",
+          800: "#0f2133",
         },
       },
       fontFamily: {
@@ -22,6 +43,8 @@ module.exports = {
       },
       backgroundImage: {
         header: "url('/assets/images/header-bg.jpg')",
+        singleMovieHeader: "url('/assets/images/hero-bg.jpg')",
+        footer: "url('/assets/images/ft-bg.jpg')",
       },
     },
   },
