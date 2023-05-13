@@ -1043,8 +1043,16 @@ video {
   width: 100vw;
 }
 
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
 .min-w-\[214px\] {
   min-width: 214px;
+}
+
+.\!max-w-\[100px\] {
+  max-width: 100px !important;
 }
 
 .\!max-w-\[119px\] {
@@ -3357,6 +3365,10 @@ video {
 
   .sm\:min-w-\[285px\] {
     min-width: 285px;
+  }
+
+  .sm\:\!max-w-\[119px\] {
+    max-width: 119px !important;
   }
 
   .sm\:basis-1\/12 {
