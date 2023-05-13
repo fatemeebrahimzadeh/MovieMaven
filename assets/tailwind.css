@@ -49,6 +49,10 @@
 
 /* scrollbar */
 
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
 }
