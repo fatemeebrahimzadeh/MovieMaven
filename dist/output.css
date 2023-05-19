@@ -3262,27 +3262,6 @@ video {
   height: 3rem;
 }
 
-.before\:h-\[36px\]::before {
-  content: var(--tw-content);
-  height: 36px;
-}
-
-.before\:h-14::before {
-  content: var(--tw-content);
-  height: 3.5rem;
-}
-
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.before\:h-fit::before {
-  content: var(--tw-content);
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .before\:w-12::before {
   content: var(--tw-content);
   width: 3rem;
@@ -3291,11 +3270,6 @@ video {
 .before\:w-4::before {
   content: var(--tw-content);
   width: 1rem;
-}
-
-.before\:w-\[36px\]::before {
-  content: var(--tw-content);
-  width: 36px;
 }
 
 .before\:items-center::before {
