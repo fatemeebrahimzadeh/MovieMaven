@@ -821,21 +821,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .-mt-80 {
   margin-top: -20rem;
 }
@@ -991,10 +976,6 @@ video {
   height: 0.25rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-11 {
   height: 2.75rem;
 }
@@ -1034,6 +1015,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .max-h-\[435px\] {
@@ -1085,12 +1070,12 @@ video {
   width: 100vw;
 }
 
-.min-w-\[200px\] {
-  min-width: 200px;
+.w-12 {
+  width: 3rem;
 }
 
-.min-w-\[214px\] {
-  min-width: 214px;
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .\!max-w-\[100px\] {
@@ -2007,6 +1992,10 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2086,6 +2075,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2130,10 +2123,6 @@ video {
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-t-2 {
-  border-top-width: 2px;
 }
 
 .border-solid {
@@ -2188,6 +2177,11 @@ video {
 .border-yellow {
   --tw-border-opacity: 1;
   border-color: rgb(220 248 54 / var(--tw-border-opacity));
+}
+
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(221 0 63 / var(--tw-border-opacity));
 }
 
 .bg-\[\#1692bb\] {
@@ -2484,18 +2478,6 @@ video {
   padding-left: 1rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2522,18 +2504,6 @@ video {
 
 .text-end {
   text-align: end;
-}
-
-.-indent-1 {
-  text-indent: -0.25rem;
-}
-
-.indent-1 {
-  text-indent: 0.25rem;
-}
-
-.indent-2 {
-  text-indent: 0.5rem;
 }
 
 .align-baseline {
@@ -2570,10 +2540,6 @@ video {
 
 .font-dosis {
   font-family: Dosis, sans-serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -2737,11 +2703,6 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
 .text-red {
   --tw-text-opacity: 1;
   color: rgb(221 0 63 / var(--tw-text-opacity));
@@ -2816,10 +2777,6 @@ video {
 .placeholder-text::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(171 183 196 / var(--tw-placeholder-opacity));
-}
-
-.opacity-75 {
-  opacity: 0.75;
 }
 
 .bg-blend-normal {
@@ -3113,64 +3070,6 @@ video {
   a-z-a--z-: #;
 }
 
-/* font Dosis */
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-Regular.otf");
-}
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-Medium.otf");
-
-  font-weight: medium;
-}
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-Light.otf");
-
-  font-weight: light;
-}
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-Bold.otf");
-
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-ExtraBold.otf");
-
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-ExtraLight.otf");
-
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Dosis";
-
-  src: url("../styles/fonts/Dosis-SemiBold.otf");
-
-  font-weight: 600;
-}
-
-/* font Dosis */
-
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -3262,6 +3161,16 @@ video {
   height: 3rem;
 }
 
+.before\:h-\[64px\]::before {
+  content: var(--tw-content);
+  height: 64px;
+}
+
+.before\:h-\[16px\]::before {
+  content: var(--tw-content);
+  height: 16px;
+}
+
 .before\:w-12::before {
   content: var(--tw-content);
   width: 3rem;
@@ -3270,6 +3179,16 @@ video {
 .before\:w-4::before {
   content: var(--tw-content);
   width: 1rem;
+}
+
+.before\:w-\[64px\]::before {
+  content: var(--tw-content);
+  width: 64px;
+}
+
+.before\:w-\[16px\]::before {
+  content: var(--tw-content);
+  width: 16px;
 }
 
 .before\:items-center::before {
@@ -3301,6 +3220,12 @@ video {
 .before\:text-center::before {
   content: var(--tw-content);
   text-align: center;
+}
+
+.before\:text-4xl::before {
+  content: var(--tw-content);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .before\:content-chevron-right::before {
