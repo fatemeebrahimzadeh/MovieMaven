@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "5rem",
+      padding: {
+        DEFAULT: "2rem",
+        lg: "5rem",
+        "2xl": "15rem",
+      },
     },
     extend: {
       boxShadow: {

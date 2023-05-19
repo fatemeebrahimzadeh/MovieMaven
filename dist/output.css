@@ -526,16 +526,16 @@ video {
   width: 100% !important;
   margin-right: auto !important;
   margin-left: auto !important;
-  padding-right: 5rem !important;
-  padding-left: 5rem !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
 }
 
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -561,10 +561,14 @@ video {
 @media (min-width: 1024px) {
   .\!container {
     max-width: 1024px !important;
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
   }
 
   .container {
     max-width: 1024px;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 }
 
@@ -581,10 +585,14 @@ video {
 @media (min-width: 1536px) {
   .\!container {
     max-width: 1536px !important;
+    padding-right: 15rem !important;
+    padding-left: 15rem !important;
   }
 
   .container {
     max-width: 1536px;
+    padding-right: 15rem;
+    padding-left: 15rem;
   }
 }
 
@@ -598,29 +606,6 @@ video {
   padding-bottom: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.drop-down-btn-navbar-link {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 1rem;
-}
-
-.drop-down-btn-navbar-link:hover {
-  --tw-text-opacity: 1;
-  color: rgb(220 248 54 / var(--tw-text-opacity));
-}
-
-@media (min-width: 1024px) {
-  .drop-down-btn-navbar-link {
-    width: auto;
-    padding: 0px;
-  }
 }
 
 .sr-only {
@@ -2459,11 +2444,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -3192,8 +3172,8 @@ video {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -3211,6 +3191,8 @@ video {
   @media (min-width: 1024px) {
     .sm\:container {
       max-width: 1024px;
+      padding-right: 5rem;
+      padding-left: 5rem;
     }
   }
 
@@ -3223,6 +3205,8 @@ video {
   @media (min-width: 1536px) {
     .sm\:container {
       max-width: 1536px;
+      padding-right: 15rem;
+      padding-left: 15rem;
     }
   }
 }
@@ -3422,6 +3406,16 @@ video {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+@media (max-width: 450px) {
+  .max-\[450px\]\:justify-center {
+    justify-content: center;
+  }
+
+  .max-\[450px\]\:text-center {
+    text-align: center;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -3565,6 +3559,10 @@ video {
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
   }
 }
 
