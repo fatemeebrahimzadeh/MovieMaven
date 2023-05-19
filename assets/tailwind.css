@@ -49,6 +49,7 @@
 
 /* scrollbar */
 
+/* TODO: */
 .slider::-webkit-scrollbar {
     display: none;
 }

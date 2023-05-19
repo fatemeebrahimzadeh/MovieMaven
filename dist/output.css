@@ -3173,6 +3173,8 @@ video {
 
 /* scrollbar */
 
+/* TODO: */
+
 .slider::-webkit-scrollbar {
   display: none;
 }
@@ -3263,6 +3265,11 @@ video {
 
 .before\:content-trailer::before {
   --tw-content: url("/assets/svgs/trailer.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-chevron-right::before {
+  --tw-content: url("/assets/svgs/chevron-right.svg");
   content: var(--tw-content);
 }
 
