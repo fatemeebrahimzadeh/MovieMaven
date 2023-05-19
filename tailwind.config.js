@@ -15,6 +15,8 @@ module.exports = {
       content: {
         ticket: 'url("/assets/svgs/ticket.svg")',
         trailer: 'url("/assets/svgs/trailer.svg")',
+        heart: 'url("/assets/svgs/heart.svg")',
+        share: 'url("/assets/svgs/share.svg")',
         "chevron-right": 'url("/assets/svgs/chevron-right.svg")',
       },
       boxShadow: {

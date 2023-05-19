@@ -3173,12 +3173,6 @@ video {
 
 /* scrollbar */
 
-/* TODO: */
-
-.slider::-webkit-scrollbar {
-  display: none;
-}
-
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -3253,9 +3247,101 @@ video {
   font-weight: 300;
 }
 
+.before\:box-border::before {
+  content: var(--tw-content);
+  box-sizing: border-box;
+}
+
+.before\:flex::before {
+  content: var(--tw-content);
+  display: flex;
+}
+
+.before\:h-12::before {
+  content: var(--tw-content);
+  height: 3rem;
+}
+
+.before\:h-\[36px\]::before {
+  content: var(--tw-content);
+  height: 36px;
+}
+
+.before\:h-14::before {
+  content: var(--tw-content);
+  height: 3.5rem;
+}
+
+.before\:h-full::before {
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:h-fit::before {
+  content: var(--tw-content);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.before\:w-12::before {
+  content: var(--tw-content);
+  width: 3rem;
+}
+
 .before\:w-4::before {
   content: var(--tw-content);
   width: 1rem;
+}
+
+.before\:w-\[36px\]::before {
+  content: var(--tw-content);
+  width: 36px;
+}
+
+.before\:items-center::before {
+  content: var(--tw-content);
+  align-items: center;
+}
+
+.before\:justify-center::before {
+  content: var(--tw-content);
+  justify-content: center;
+}
+
+.before\:rounded-full::before {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.before\:border-2::before {
+  content: var(--tw-content);
+  border-width: 2px;
+}
+
+.before\:border-red::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(221 0 63 / var(--tw-border-opacity));
+}
+
+.before\:text-center::before {
+  content: var(--tw-content);
+  text-align: center;
+}
+
+.before\:content-chevron-right::before {
+  --tw-content: url("/assets/svgs/chevron-right.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-heart::before {
+  --tw-content: url("/assets/svgs/heart.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-share::before {
+  --tw-content: url("/assets/svgs/share.svg");
+  content: var(--tw-content);
 }
 
 .before\:content-ticket::before {
@@ -3268,13 +3354,18 @@ video {
   content: var(--tw-content);
 }
 
-.before\:content-chevron-right::before {
-  --tw-content: url("/assets/svgs/chevron-right.svg");
+.after\:content-\[\'ADD_TO_FAVORITE\'\]::after {
+  --tw-content: 'ADD TO FAVORITE';
   content: var(--tw-content);
 }
 
 .after\:content-\[\'BUY_TICKET\'\]::after {
   --tw-content: 'BUY TICKET';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'SHARE\'\]::after {
+  --tw-content: 'SHARE';
   content: var(--tw-content);
 }
 
@@ -3712,4 +3803,8 @@ video {
   .\32xl\:w-\[600px\] {
     width: 600px;
   }
+}
+
+.\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {
+  display: none;
 }
