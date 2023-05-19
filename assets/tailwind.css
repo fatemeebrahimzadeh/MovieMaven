@@ -2,51 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font Dosis */
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Regular.otf");
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Medium.otf");
-    font-weight: medium;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Light.otf");
-    font-weight: light;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Bold.otf");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-ExtraBold.otf");
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-ExtraLight.otf");
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-SemiBold.otf");
-    font-weight: 600;
-}
-
-/* font Dosis */
-
 /* scrollbar */
 
 ::-webkit-scrollbar {
