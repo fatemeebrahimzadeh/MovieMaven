@@ -798,21 +798,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .-mt-80 {
   margin-top: -20rem;
 }
@@ -1058,8 +1043,16 @@ video {
   width: 100vw;
 }
 
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
 .min-w-\[214px\] {
   min-width: 214px;
+}
+
+.\!max-w-\[100px\] {
+  max-width: 100px !important;
 }
 
 .\!max-w-\[119px\] {
@@ -2097,10 +2090,6 @@ video {
   border-top-width: 1px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -2444,14 +2433,6 @@ video {
   padding-left: 1rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -2482,18 +2463,6 @@ video {
 
 .text-end {
   text-align: end;
-}
-
-.-indent-1 {
-  text-indent: -0.25rem;
-}
-
-.indent-1 {
-  text-indent: 0.25rem;
-}
-
-.indent-2 {
-  text-indent: 0.5rem;
 }
 
 .align-baseline {
@@ -2530,10 +2499,6 @@ video {
 
 .font-dosis {
   font-family: Dosis, sans-serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -2697,11 +2662,6 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
 .text-red {
   --tw-text-opacity: 1;
   color: rgb(221 0 63 / var(--tw-text-opacity));
@@ -2776,10 +2736,6 @@ video {
 .placeholder-text::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(171 183 196 / var(--tw-placeholder-opacity));
-}
-
-.opacity-75 {
-  opacity: 0.75;
 }
 
 .bg-blend-normal {
@@ -3133,6 +3089,10 @@ video {
 
 /* scrollbar */
 
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -3407,6 +3367,10 @@ video {
     min-width: 285px;
   }
 
+  .sm\:\!max-w-\[119px\] {
+    max-width: 119px !important;
+  }
+
   .sm\:basis-1\/12 {
     flex-basis: 8.333333%;
   }
@@ -3503,14 +3467,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:basis-full {
     flex-basis: 100%;
   }
@@ -3529,14 +3485,6 @@ video {
 
   .md\:gap-0 {
     gap: 0px;
-  }
-
-  .group:hover .md\:group-hover\:flex {
-    display: flex;
-  }
-
-  .group:hover :is(.dark .md\:group-hover\:dark\:bg-dark-backdrop) {
-    background-color: rgba(0, 0, 0, 0.75);
   }
 }
 
