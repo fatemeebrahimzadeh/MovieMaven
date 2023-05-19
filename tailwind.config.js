@@ -5,9 +5,20 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "5rem",
+      padding: {
+        DEFAULT: "2rem",
+        lg: "5rem",
+        "2xl": "15rem",
+      },
     },
     extend: {
+      content: {
+        ticket: 'url("/assets/svgs/ticket.svg")',
+        trailer: 'url("/assets/svgs/trailer.svg")',
+        heart: 'url("/assets/svgs/heart.svg")',
+        share: 'url("/assets/svgs/share.svg")',
+        "chevron-right": 'url("/assets/svgs/chevron-right.svg")',
+      },
       boxShadow: {
         "inset-custom": "inset -5px -50px 100px -15px #000000",
       },

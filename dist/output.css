@@ -526,16 +526,16 @@ video {
   width: 100% !important;
   margin-right: auto !important;
   margin-left: auto !important;
-  padding-right: 5rem !important;
-  padding-left: 5rem !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
 }
 
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -561,10 +561,14 @@ video {
 @media (min-width: 1024px) {
   .\!container {
     max-width: 1024px !important;
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
   }
 
   .container {
     max-width: 1024px;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 }
 
@@ -581,10 +585,14 @@ video {
 @media (min-width: 1536px) {
   .\!container {
     max-width: 1536px !important;
+    padding-right: 15rem !important;
+    padding-left: 15rem !important;
   }
 
   .container {
     max-width: 1536px;
+    padding-right: 15rem;
+    padding-left: 15rem;
   }
 }
 
@@ -598,6 +606,21 @@ video {
   padding-bottom: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.flip-button {
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.flip-button:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-button::before,
+    .flip-button::after {
+  transition: transform 0.5s;
+  /* transform-style: preserve-3d; */
 }
 
 .sr-only {
@@ -798,6 +821,21 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-mt-80 {
   margin-top: -20rem;
 }
@@ -955,6 +993,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
 }
 
 .h-5 {
@@ -2090,6 +2132,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -2417,6 +2463,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -2431,6 +2482,14 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pr-10 {
@@ -2463,6 +2522,18 @@ video {
 
 .text-end {
   text-align: end;
+}
+
+.-indent-1 {
+  text-indent: -0.25rem;
+}
+
+.indent-1 {
+  text-indent: 0.25rem;
+}
+
+.indent-2 {
+  text-indent: 0.5rem;
 }
 
 .align-baseline {
@@ -2499,6 +2570,10 @@ video {
 
 .font-dosis {
   font-family: Dosis, sans-serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -2662,6 +2737,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .text-red {
   --tw-text-opacity: 1;
   color: rgb(221 0 63 / var(--tw-text-opacity));
@@ -2736,6 +2816,10 @@ video {
 .placeholder-text::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(171 183 196 / var(--tw-placeholder-opacity));
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .bg-blend-normal {
@@ -3089,10 +3173,6 @@ video {
 
 /* scrollbar */
 
-.slider::-webkit-scrollbar {
-  display: none;
-}
-
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -3112,8 +3192,8 @@ video {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 640px) {
@@ -3131,6 +3211,8 @@ video {
   @media (min-width: 1024px) {
     .sm\:container {
       max-width: 1024px;
+      padding-right: 5rem;
+      padding-left: 5rem;
     }
   }
 
@@ -3143,6 +3225,8 @@ video {
   @media (min-width: 1536px) {
     .sm\:container {
       max-width: 1536px;
+      padding-right: 15rem;
+      padding-left: 15rem;
     }
   }
 }
@@ -3161,6 +3245,107 @@ video {
 
 .placeholder\:font-light::placeholder {
   font-weight: 300;
+}
+
+.before\:box-border::before {
+  content: var(--tw-content);
+  box-sizing: border-box;
+}
+
+.before\:flex::before {
+  content: var(--tw-content);
+  display: flex;
+}
+
+.before\:h-12::before {
+  content: var(--tw-content);
+  height: 3rem;
+}
+
+.before\:w-12::before {
+  content: var(--tw-content);
+  width: 3rem;
+}
+
+.before\:w-4::before {
+  content: var(--tw-content);
+  width: 1rem;
+}
+
+.before\:items-center::before {
+  content: var(--tw-content);
+  align-items: center;
+}
+
+.before\:justify-center::before {
+  content: var(--tw-content);
+  justify-content: center;
+}
+
+.before\:rounded-full::before {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.before\:border-2::before {
+  content: var(--tw-content);
+  border-width: 2px;
+}
+
+.before\:border-red::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(221 0 63 / var(--tw-border-opacity));
+}
+
+.before\:text-center::before {
+  content: var(--tw-content);
+  text-align: center;
+}
+
+.before\:content-chevron-right::before {
+  --tw-content: url("/assets/svgs/chevron-right.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-heart::before {
+  --tw-content: url("/assets/svgs/heart.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-share::before {
+  --tw-content: url("/assets/svgs/share.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-ticket::before {
+  --tw-content: url("/assets/svgs/ticket.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-trailer::before {
+  --tw-content: url("/assets/svgs/trailer.svg");
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'ADD_TO_FAVORITE\'\]::after {
+  --tw-content: 'ADD TO FAVORITE';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'BUY_TICKET\'\]::after {
+  --tw-content: 'BUY TICKET';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'SHARE\'\]::after {
+  --tw-content: 'SHARE';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'WATCH_TRAILER\'\]::after {
+  --tw-content: 'WATCH TRAILER';
+  content: var(--tw-content);
 }
 
 .hover\:cursor-pointer:hover {
@@ -3218,6 +3403,11 @@ video {
 .hover\:before\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
+}
+
+.hover\:after\:content-\[\'\'\]:hover::after {
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .focus\:outline-none:focus {
@@ -3340,6 +3530,16 @@ video {
 
 .group:hover :is(.dark .group-hover\:dark\:bg-dark-backdrop) {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 450px) {
+  .max-\[450px\]\:justify-center {
+    justify-content: center;
+  }
+
+  .max-\[450px\]\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3486,6 +3686,10 @@ video {
   .md\:gap-0 {
     gap: 0px;
   }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3573,4 +3777,8 @@ video {
   .\32xl\:w-\[600px\] {
     width: 600px;
   }
+}
+
+.\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {
+  display: none;
 }

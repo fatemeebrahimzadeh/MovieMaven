@@ -49,10 +49,6 @@
 
 /* scrollbar */
 
-.slider::-webkit-scrollbar {
-    display: none;
-}
-
 ::-webkit-scrollbar {
     width: 4px;
 }
@@ -70,5 +66,20 @@
 @layer components {
     .button {
         @apply bg-red rounded-full px-6 py-3 text-white;
+    }
+
+    .flip-button {
+        position: relative;
+        transition: transform 0.5s;
+    }
+
+    .flip-button:hover {
+        transform: rotateY(180deg);
+    }
+
+    .flip-button::before,
+    .flip-button::after {
+        transition: transform 0.5s;
+        /* transform-style: preserve-3d; */
     }
 }

@@ -60,12 +60,14 @@
       <div class="container h-full flex flex-col justify-around">
         <nav>
           <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
           >
             <a href="#">
               <img
-              class="!max-w-[100px] sm:!max-w-[119px]"
-               src="assets/images/logo.png" alt="logo" />
+                class="!max-w-[100px] sm:!max-w-[119px]"
+                src="assets/images/logo.png"
+                alt="logo"
+              />
             </a>
             <button
               data-collapse-toggle="navbar-dropdown"
@@ -75,98 +77,23 @@
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <svg
+              <img
                 class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+                src="./assets/svgs/mobile-nav-bar-icon.svg"
+                alt="nav-bar-icon"
+              />
             </button>
             <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
               <ul
                 class="flex flex-col items-center p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0"
               >
-                <li class="group relative">
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
+                    aria-current="page"
+                    >HOME</a
                   >
-                    PAGES
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-sm text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="./index-light.html"
-                          class="block px-4 py-2 hover:text-yellow"
-                          >HOME LIGHT</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./single-movie.html"
-                          class="block px-4 py-2 hover:text-yellow"
-                          >SINGLE MOVIE</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./single-movie-light.html"
-                          class="block px-4 py-2 hover:text-yellow"
-                          >LIGHT SINGLE MOVIE</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./favorite-movies.html"
-                          class="block px-4 py-2 hover:text-yellow"
-                          >FAVORITE MOVIES</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./favorite-movie-light.html"
-                          class="block px-4 py-2 hover:text-yellow"
-                          >LIGHT FAVORITE MOVIES</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="./edit-profile.html"
-                          class="block px-4 py-2 hover:text-yellow"
-                          >EDIT PROFILE</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
                 </li>
                 <li class="group relative">
                   <button
@@ -175,19 +102,11 @@
                     class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
                   >
                     MOVIES
-                    <svg
+                    <img
                       class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                      src="./assets/svgs/bottom-arrow.svg"
+                      alt="bottom-arrow"
+                    />
                   </button>
                   <!-- Dropdown menu -->
                   <div
@@ -223,19 +142,11 @@
                     class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
                   >
                     CELEBRITIES
-                    <svg
+                    <img
                       class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                      src="./assets/svgs/bottom-arrow.svg"
+                      alt="bottom-arrow"
+                    />
                   </button>
                   <!-- Dropdown menu -->
                   <div
@@ -295,19 +206,11 @@
                 type="button"
               >
                 TV SHOWS
-                <svg
+                <img
                   class="w-5 h-5 ml-1"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                  src="./assets/svgs/bottom-arrow.svg"
+                  alt="bottom-arrow"
+                />
               </button>
               <div
                 id="dropdown-states"
@@ -348,21 +251,11 @@
                 type="submit"
                 class="absolute top-0 right-0 p-2.5 text-sm font-medium text-text"
               >
-                <svg
-                  aria-hidden="true"
+                <img
                   class="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  ></path>
-                </svg>
+                  src="./assets/svgs/search-icon.svg"
+                  alt="search-icon"
+                />
               </button>
             </div>
           </div>
@@ -383,7 +276,9 @@
             <i class="fa fa-youtube fa-md fa-fw hover:text-yellow"></i>
           </a>
         </div>
-        <div class="slider flex overflow-x-scroll scroll-snap-x-mandatory">
+        <div
+          class="slider [&::-webkit-scrollbar]:hidden flex overflow-x-scroll scroll-snap-x-mandatory"
+        >
           <div
             class="slider-images flex gap-4 scroll-snap-align-center w-full mb-2"
           >
@@ -609,15 +504,19 @@
               <header
                 class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 sm:items-center"
               >
-                <h2 class="text-black dark:text-white text-3xl">IN THEATER</h2>
+                <h2
+                  class="text-black dark:text-white text-3xl max-[450px]:text-center"
+                >
+                  IN THEATER
+                </h2>
                 <a
-                  class="text-sm hover:text-red dark:hover:text-yellow"
+                  class="text-sm hover:text-red dark:hover:text-yellow max-[450px]:text-center"
                   href="#"
                   >VIEW ALL <i class="fa fa-chevron-right fa-sm fa-fw"></i
                 ></a>
               </header>
               <section class="tabs-link">
-                <ul class="block gap-3 mb-5 lg:flex">
+                <ul class="block gap-3 mb-5 lg:flex max-[450px]:text-center">
                   <li
                     class="text-red dark:text-yellow hover:text-red dark:hover:text-yellow"
                   >
@@ -633,7 +532,9 @@
                     #MOST REVIEWID
                   </li>
                 </ul>
-                <div class="movie-list flex flex-wrap gap-4">
+                <div
+                  class="movie-list flex flex-wrap gap-4 max-[450px]:justify-center"
+                >
                   <div class="movie-item relative group">
                     <img
                       class="flex-shrink-0 object-cover"
@@ -729,15 +630,19 @@
               <header
                 class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 sm:items-center"
               >
-                <h2 class="text-black dark:text-white text-3xl">ON TV</h2>
+                <h2
+                  class="text-black dark:text-white text-3xl max-[450px]:text-center"
+                >
+                  ON TV
+                </h2>
                 <a
-                  class="text-sm hover:hover:text-red dark:hover:text-yellow"
+                  class="text-sm hover:hover:text-red dark:hover:text-yellow max-[450px]:text-center"
                   href="#"
                   >VIEW ALL <i class="fa fa-chevron-right fa-sm fa-fw"></i
                 ></a>
               </header>
               <section class="tabs-link">
-                <ul class="block gap-3 mb-5 lg:flex">
+                <ul class="block gap-3 mb-5 lg:flex max-[450px]:text-center">
                   <li class="hover:text-red dark:hover:text-yellow">
                     #POPULAR
                   </li>
@@ -751,7 +656,9 @@
                     #MOST REVIEWID
                   </li>
                 </ul>
-                <div class="movie-list flex flex-wrap gap-4">
+                <div
+                  class="movie-list flex flex-wrap gap-4 max-[450px]:justify-center"
+                >
                   <div class="movie-item relative group">
                     <img
                       class="flex-shrink-0 object-cover"
@@ -1185,7 +1092,7 @@
           class="flex flex-col gap-5 basis-1/5 justify-between md:basis-full md:items-center lg:items-start lg:basis-1/5"
         >
           <img
-          class="!max-w-[119px]"
+            class="!max-w-[119px]"
             src="./assets/images/logo.png"
             alt="logo"
           />
@@ -1302,5 +1209,106 @@
         </section>
       </div>
     </footer>
+    <!-- edit profile form popup -->
+    <!-- add flex to work -->
+    <section
+      class="hidden z-50 overlay fixed w-screen h-screen top-0 left-0 items-center justify-center bg-dark-backdrop font-dosis"
+    >
+      <div class="signup-content bg-white w-96 flex flex-col items-center p-5">
+        <h2 class="text-black text-2xl font-dosis">PROFILE</h2>
+        <form action="#" class="w-full p-5">
+          <label class="text-black" for="username">USERNAME:</label>
+          <input
+            name="username"
+            type="text"
+            value="fatemeebrahimzadeh"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="email">YOUR EMAIL:</label>
+          <input
+            name="email"
+            type="email"
+            disabled
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            value="fateme.ebrahimzadeh20@gmail.com"
+            required
+          />
+          <label class="text-black" for="firstname">FIRSTNAME:</label>
+          <input
+            name="firstname"
+            type="text"
+            value="fateme"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="lastname">LASTNAME:</label>
+          <input
+            name="lastname"
+            type="text"
+            value="ebrahimzade"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="address">ADDRESS:</label>
+          <input
+            name="address"
+            type="text"
+            value="ISF, Bahonar st. "
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <button class="w-full bg-red px-5 py-3 text-white" type="submit">
+            EDIT PROFILE
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- end edit profile popup -->
+    <!-- signup form popup -->
+    <!-- add flex to work -->
+    <section
+      class="hidden z-50 overlay fixed w-screen h-screen top-0 left-0 items-center justify-center bg-dark-backdrop font-dosis"
+    >
+      <div class="signup-content bg-white w-96 flex flex-col items-center p-5">
+        <h2 class="text-black text-2xl font-dosis">SIGN UP</h2>
+        <form action="#" class="w-full p-5">
+          <label class="text-black" for="username">USERNAME:</label>
+          <input
+            name="username"
+            type="text"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="email">YOUR EMAIL:</label>
+          <input
+            name="email"
+            type="email"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="password">PASSWORD:</label>
+          <input
+            name="password"
+            type="password"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="retype-password"
+            >RE-TYPE PASSWORD:</label
+          >
+          <input
+            name="retype-password"
+            type="password"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <button class="w-full bg-red px-5 py-3 text-white" type="submit">
+            SIGN UP
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- end signup form popup -->
   </body>
 </html>
