@@ -12,6 +12,10 @@ module.exports = {
       },
     },
     extend: {
+      content: {
+        ticket: 'url("/assets/svgs/ticket.svg")',
+        trailer: 'url("/assets/svgs/trailer.svg")',
+      },
       boxShadow: {
         "inset-custom": "inset -5px -50px 100px -15px #000000",
       },

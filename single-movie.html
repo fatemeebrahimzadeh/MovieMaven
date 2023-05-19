@@ -300,25 +300,23 @@
       </div>
     </header>
     <main class="py-10">
-      <div class="container flex flex-col lg:flex-row -mt-80 gap-10">
+      <div
+        class="container flex flex-col items-center lg:items-start lg:flex-row -mt-80 gap-10"
+      >
         <aside
-          class="bg-dark-primary lg:sticky top-1 lg:border-2 lg:border-dark-secondary flex flex-col items-center gap-5 pb-5 h-fit"
+          class="w-fit bg-dark-primary lg:sticky top-1 lg:border-2 lg:border-dark-secondary flex flex-col items-center gap-5 pb-5 h-fit"
         >
           <img
             class="w-fit"
             src="./assets/images/movie-single.jpg"
             alt="movie-single"
           />
-          <button class="w-[90%] rounded-sm bg-red px-5 py-3 text-white group">
-            <i class="fa fa-play fa-fw fa-sm"></i>
-            <span class="group-hover:none">WATCH TRAILER</span>
-          </button>
           <button
-            class="w-[90%] rounded-sm bg-yellow px-5 py-3 text-black group"
-          >
-            <i class="fa fa-ticket fa-fw fa-sm"></i>
-            <span class="group-hover:none">BUY TICKET</span>
-          </button>
+            class="w-[90%] h-11 rounded-sm bg-red px-5 py-3 text-white flex justify-center gap-4 before:w-4 before:content-trailer after:content-['WATCH_TRAILER'] hover:after:content-[''] flip-button"
+          ></button>
+          <button
+            class="w-[90%] h-11 rounded-sm bg-yellow px-5 py-3 text-black flex justify-center gap-4 before:w-4 before:content-ticket after:content-['BUY_TICKET'] hover:after:content-[''] flip-button"
+          ></button>
         </aside>
         <div class="basis-2/3 flex flex-col gap-10">
           <h1 class="font-extralight text-2xl">

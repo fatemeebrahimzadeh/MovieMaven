@@ -608,6 +608,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.flip-button {
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.flip-button:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-button::before,
+    .flip-button::after {
+  transition: transform 0.5s;
+  /* transform-style: preserve-3d; */
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -978,6 +993,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
 }
 
 .h-5 {
@@ -3232,6 +3251,31 @@ video {
   font-weight: 300;
 }
 
+.before\:w-4::before {
+  content: var(--tw-content);
+  width: 1rem;
+}
+
+.before\:content-ticket::before {
+  --tw-content: url("/assets/svgs/ticket.svg");
+  content: var(--tw-content);
+}
+
+.before\:content-trailer::before {
+  --tw-content: url("/assets/svgs/trailer.svg");
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'BUY_TICKET\'\]::after {
+  --tw-content: 'BUY TICKET';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'WATCH_TRAILER\'\]::after {
+  --tw-content: 'WATCH TRAILER';
+  content: var(--tw-content);
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -3287,6 +3331,11 @@ video {
 .hover\:before\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
+}
+
+.hover\:after\:content-\[\'\'\]:hover::after {
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .focus\:outline-none:focus {
