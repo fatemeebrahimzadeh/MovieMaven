@@ -857,6 +857,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1021,6 +1025,14 @@ video {
   height: 100vh;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-3\.5 {
+  height: 0.875rem;
+}
+
 .max-h-\[435px\] {
   max-height: 435px;
 }
@@ -1072,6 +1084,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-3\.5 {
+  width: 0.875rem;
 }
 
 .min-w-\[200px\] {
@@ -2726,6 +2746,11 @@ video {
   color: rgb(220 248 54 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3237,6 +3262,11 @@ video {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3312,6 +3342,10 @@ video {
   color: rgb(221 0 63 / var(--tw-text-opacity));
 }
 
+.group:active .group-active\:flex {
+  display: flex;
+}
+
 :is(.dark .dark\:border-0) {
   border-width: 0px;
 }
@@ -3379,6 +3413,11 @@ video {
   color: rgb(220 248 54 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-gray-400) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:placeholder-text)::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(171 183 196 / var(--tw-placeholder-opacity));
@@ -3404,6 +3443,11 @@ video {
   border-color: rgb(220 248 54 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:hover\:bg-gray-600:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:hover\:text-yellow:hover) {
   --tw-text-opacity: 1;
   color: rgb(220 248 54 / var(--tw-text-opacity));
@@ -3412,6 +3456,11 @@ video {
 :is(.dark .hover\:dark\:text-yellow):hover {
   --tw-text-opacity: 1;
   color: rgb(220 248 54 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-white:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover :is(.dark .group-hover\:dark\:bg-dark-backdrop) {
