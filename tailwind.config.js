@@ -27,6 +27,7 @@ module.exports = {
         text: "#abb7c4",
         blue: "#4280bf",
         yellow: "#dcf836",
+        lighten: "rgba(217, 230, 236, 0.5)",
         light: {
           primary: "#ffffff",
           backgroundColor: "#f2f6f8",

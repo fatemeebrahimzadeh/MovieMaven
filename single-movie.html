@@ -91,204 +91,225 @@
   </head>
 
   <body
-    class="w-[100vw] h-[100vh] font-dosis font-semibold text-text text-sm bg-white dark:bg-dark-primary"
+    class="w-[100vw] h-[100vh] font-dosis font-semibold text-black dark:text-text text-sm bg-white dark:bg-dark-primary"
   >
     <header class="w-full bg-singleMovieHeader h-[500px] bg-cover">
-      <div class="container">
-        <nav>
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
-          >
-            <a href="#">
-              <img
-                class="!max-w-[100px] sm:!max-w-[119px]"
-                src="./assets/images/logo.png"
-                alt="logo"
-              />
-            </a>
-            <button
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="inline-flex items-center p-2 ml-3 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-              aria-controls="navbar-dropdown"
-              aria-expanded="false"
+      <div class="w-full h-full bg-lighten dark:bg-transparent">
+        <div class="container">
+          <nav>
+            <div
+              class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
             >
-              <span class="sr-only">Open main menu</span>
-              <img
-                class="w-6 h-6"
-                src="./assets/svgs/mobile-nav-bar-icon.svg"
-                alt="nav-bar-icon"
-              />
-            </button>
-            <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
-              <ul
-                class="flex flex-col items-center p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    aria-current="page"
-                    >HOME</a
-                  >
-                </li>
-                <li class="group relative">
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
-                  >
-                    MOVIES
-                    <i
-                      class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
-                    ></i>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-sm text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Action</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Comedy</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Drama</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="group relative">
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
-                  >
-                    CELEBRITIES
-                    <i
-                      class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
-                    ></i>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-sm text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Actors</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Actresses</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Directors</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    >NEWS</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    >COMMUNITY</a
-                  >
-                </li>
-                <li>
-                  <button class="button">SIGN UP</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <form class="hidden sm:block border-dark-primary bg-[#233a50] border-4">
-          <div class="flex">
-            <div class="flex group relative">
+              <a href="#">
+                <img
+                  class="!max-w-[100px] sm:!max-w-[119px]"
+                  src="assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
               <button
-                id="states-button"
-                data-dropdown-toggle="dropdown-states"
-                class="flex-shrink-0 z-10 inline-flex items-center py-2.5 mx-4 text-sm font-medium text-center rounded-l-lg focus:outline-none border-r-2 border-black"
+                data-collapse-toggle="navbar-dropdown"
                 type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+                aria-controls="navbar-dropdown"
+                aria-expanded="false"
               >
-                TV SHOWS
-                <i class="fa fa-chevron-down fa-sm fa-fw ml-1 text-text"></i>
+                <span class="sr-only">Open main menu</span>
+                <img
+                  class="w-6 h-6"
+                  src="./assets/svgs/mobile-nav-bar-icon.svg"
+                  alt="nav-bar-icon"
+                />
               </button>
               <div
-                id="dropdown-states"
-                class="z-10 hidden group-hover:inline-block group-hover:absolute top-[2.65rem] -left-2 rounded-lg divide-y divide-gray-100 shadow-lg w-44 bg-dark-triority"
+                class="hidden w-full lg:block lg:w-auto"
+                id="navbar-dropdown"
               >
                 <ul
-                  class="py-2 text-sm text-gray-200"
-                  aria-labelledby="states-button"
+                  class="flex flex-col items-center p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0"
                 >
                   <li>
-                    <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      aria-current="page"
+                      >HOME</a
                     >
-                      <div class="inline-flex items-center">TV SHOWS</div>
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 group-hover:text-red dark:group-hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      MOVIES
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
                     </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Comedy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Drama</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      CELEBRITIES
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Actors</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Actresses</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Directors</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
-                    <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      >NEWS</a
                     >
-                      <div class="inline-flex items-center">OTHERS</div>
-                    </button>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      >COMMUNITY</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./signup-popup.html" class="button">SIGN UP</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="relative w-full">
-              <input
-                type="search"
-                id="search-dropdown"
-                class="block p-2.5 w-full z-20 text-sm bg-transparent placeholder-text text-text"
-                placeholder="Search for a movie, TV Show or celebrity that you are looking for"
-                required
-              />
-              <button
-                type="submit"
-                class="absolute top-0 right-0 p-2.5 text-sm font-medium text-text"
-              >
-                <img
-                  class="w-5 h-5"
-                  src="./assets/svgs/search-icon.svg"
-                  alt="search-icon"
+          </nav>
+          <form
+            class="hidden sm:block border-dark-primary bg-[#233a50] border-4"
+          >
+            <div class="flex">
+              <div class="flex group relative">
+                <button
+                  id="states-button"
+                  data-dropdown-toggle="dropdown-states"
+                  class="flex-shrink-0 z-10 inline-flex items-center py-2.5 mx-4 text-gray-200 dark:text-black group-hover:text-red group-hover:dark:text-yellow text-sm font-medium text-center rounded-l-lg focus:outline-none border-r-2 border-black"
+                  type="button"
+                >
+                  TV SHOWS
+                  <i
+                    class="fa fa-chevron-down fa-sm fa-fw ml-1 text-gray-200 dark:text-black group-hover:text-red group-hover:dark:text-yellow"
+                  ></i>
+                </button>
+                <div
+                  id="dropdown-states"
+                  class="z-10 hidden group-hover:inline-block group-hover:absolute top-[2.65rem] -left-2 rounded-lg divide-y divide-gray-100 shadow-lg w-44 bg-dark-triority"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-200"
+                    aria-labelledby="states-button"
+                  >
+                    <li>
+                      <button
+                        type="button"
+                        class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                      >
+                        <div class="inline-flex items-center">TV SHOWS</div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                      >
+                        <div class="inline-flex items-center">OTHERS</div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="block p-2.5 w-full z-20 text-sm bg-transparent placeholder-text text-text"
+                  placeholder="Search for a movie, TV Show or celebrity that you are looking for"
+                  required
                 />
-              </button>
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 p-2.5 text-sm font-medium text-text"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/svgs/search-icon.svg"
+                    alt="search-icon"
+                  />
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </header>
     <main class="py-10">
@@ -310,7 +331,7 @@
             class="w-[90%] h-11 rounded-sm bg-yellow px-5 py-3 text-black flex justify-center gap-4 before:w-4 before:content-ticket after:content-['BUY_TICKET'] hover:after:content-[''] flip-button"
           ></button>
         </aside>
-        <div class="basis-2/3 flex flex-col gap-10">
+        <div class="basis-2/3 flex flex-col gap-8">
           <h1 class="font-extralight text-2xl">
             <span class="dark:text-white font-bold text-4xl">
               Skyfall: Quantum of Spectre</span
@@ -342,7 +363,7 @@
                 <div>
                   <span class="text-white text-lg">8.1</span>
                   <span>/10</span>
-                  <p class="text-blue">56 Reviews</p>
+                  <p class="text-black dark:text-blue">56 Reviews</p>
                 </div>
               </span>
             </div>
@@ -358,24 +379,28 @@
             </div>
           </div>
           <ul class="flex flex-col md:flex-row justify-between">
-            <li class="text-yellow border-b-2 border-yellow p-2">OVERVIEW</li>
             <li
-              class="p-2 hover:text-yellow hover:border-b-2 hover:border-yellow"
+              class="text-red dark:text-yellow border-b-2 border-red dark:border-yellow p-2"
+            >
+              OVERVIEW
+            </li>
+            <li
+              class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
               REVIEWS
             </li>
             <li
-              class="p-2 hover:text-yellow hover:border-b-2 hover:border-yellow"
+              class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
               CAST & CREW
             </li>
             <li
-              class="p-2 hover:text-yellow hover:border-b-2 hover:border-yellow"
+              class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
               MEDIA
             </li>
             <li
-              class="p-2 hover:text-yellow hover:border-b-2 hover:border-yellow"
+              class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
               RELATED MOVIES
             </li>
@@ -715,129 +740,167 @@
         </div>
       </div>
     </main>
-    <footer class="bg-footer bg-cover py-10">
-      <div
-        class="container flex flex-col gap-5 lg:gap-0 md:flex-row md:flex-wrap justify-between"
-      >
-        <section
-          class="flex flex-col gap-5 basis-1/5 justify-between md:basis-full md:items-center lg:items-start lg:basis-1/5"
+    <footer class="bg-footer bg-cover">
+      <div class="w-full h-full bg-lighten dark:bg-transparent py-10">
+        <div
+          class="container flex flex-col gap-5 lg:gap-0 md:flex-row md:flex-wrap justify-between"
         >
-          <img
-            class="!max-w-[119px]"
-            src="./assets/images/logo.png"
-            alt="logo"
-          />
-          <div class="info basis-1/5 grid gap-5">
-            <p class="font-extralight">
-              5th Avenue st, manhattan
-              <br />
-              New York, NY 10001
-            </p>
-            <p class="font-extralight">
-              Call us:
-              <a class="text-white hover:text-yellow" href="#"
-                >(+01) 202 342 6789</a
-              >
-            </p>
-          </div>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Resources</h4>
-          <ul class="flex flex-col items-baseline gap-3">
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">About</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Blockbuster</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">Forums</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">Blog</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Help Center</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Legal</h4>
-          <ul class="flex flex-col items-baseline gap-3">
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Term Of Use</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">Security</a>
-            </li>
-          </ul>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Account</h4>
-          <ul class="flex flex-col items-baseline gap-3">
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >My Account</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Watchlist</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Collections</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >User Guide</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Newsletter</h4>
-          <p class="font-extralight">
-            Subscribe to our newsletter system now
-            <br />
-            to get latest news from us.
-          </p>
-          <div class="relative w-full">
-            <input
-              type="email"
-              class="block w-full text-sm bg-transparent placeholder-text border-[1px] border-dark-100 rounded-sm px-5 py-1 placeholder:font-extralight"
-              placeholder="Enter your email"
-              required
+          <section
+            class="flex flex-col gap-5 basis-1/5 justify-between md:basis-full md:items-center lg:items-start lg:basis-1/5"
+          >
+            <img
+              class="!max-w-[119px]"
+              src="./assets/images/logo.png"
+              alt="logo"
             />
-            <button
-              type="submit"
-              class="absolute top-0 right-0 p-1 text-base font-extralight text-text"
-            >
-              <i class="fa fa-envelope fa-sm fa-fw"></i>
-            </button>
-          </div>
-          <a class="text-xs text-red" href="#"
-            >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
-          ></a>
-        </section>
+            <div class="info basis-1/5 grid gap-5">
+              <p class="font-light">
+                5th Avenue st, manhattan
+                <br />
+                New York, NY 10001
+              </p>
+              <p class="font-light">
+                Call us:
+                <a
+                  class="text-white hover:text-red dark:hover:text-yellow"
+                  href="#"
+                  >(+01) 202 342 6789</a
+                >
+              </p>
+            </div>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Resources</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Blockbuster</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Forums</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Help Center</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Legal</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Term Of Use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Account</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >My Account</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Watchlist</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Collections</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >User Guide</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Newsletter</h4>
+            <p class="font-light">
+              Subscribe to our newsletter system now
+              <br />
+              to get latest news from us.
+            </p>
+            <div class="relative w-full">
+              <input
+                type="email"
+                class="block placeholder:text-black dark:placeholder:text-text w-full text-sm bg-transparent placeholder-text border-[1px] border-dark-100 rounded-sm px-5 py-1 placeholder:font-light"
+                placeholder="Enter your email"
+                required
+              />
+              <button
+                type="submit"
+                class="absolute top-0 right-0 p-1 text-base font-light text-black dark:text-text"
+              >
+                <i class="fa fa-envelope fa-sm fa-fw"></i>
+              </button>
+            </div>
+            <a class="text-xs text-red" href="#"
+              >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
+            ></a>
+          </section>
+        </div>
       </div>
     </footer>
   </body>
