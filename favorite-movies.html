@@ -59,7 +59,7 @@
         <div class="container flex flex-col h-full">
           <nav>
             <div
-              class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
+              class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
             >
               <a href="#">
                 <img
@@ -69,11 +69,9 @@
                 />
               </a>
               <button
-                data-collapse-toggle="navbar-dropdown"
+                id="navbar-toggler"
                 type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-                aria-controls="navbar-dropdown"
-                aria-expanded="false"
+                class="inline-flex items-center p-2 ml-3 text-sm lg:hidden"
               >
                 <span class="sr-only">Open main menu</span>
                 <img
@@ -83,11 +81,11 @@
                 />
               </button>
               <div
-                class="hidden w-full lg:block lg:w-auto"
+                class="hidden rounded-lg w-full z-20 bg-light-secondary dark:bg-dark-secondary absolute top-[112px] sm:top-[122px] left-0 lg:static lg:block lg:w-auto lg:bg-transparent lg:dark:bg-transparent"
                 id="navbar-dropdown"
               >
                 <ul
-                  class="flex flex-col items-center p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0"
+                  class="flex flex-col items-center p-4 lg:p-0 lg:flex-row lg:space-x-8 lg:mt-0"
                 >
                   <li>
                     <a
@@ -111,7 +109,7 @@
                     <!-- Dropdown menu -->
                     <div
                       id="dropdownNavbar"
-                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.75rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
                     >
                       <ul
                         class="py-2 text-sm text-gray-400"
@@ -155,7 +153,7 @@
                     <!-- Dropdown menu -->
                     <div
                       id="dropdownNavbar"
-                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
                     >
                       <ul
                         class="py-2 text-sm text-gray-400"
@@ -213,7 +211,7 @@
                     <!-- Dropdown menu -->
                     <div
                       id="dropdownNavbar"
-                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
                     >
                       <ul
                         class="py-2 text-sm text-gray-400"
@@ -267,8 +265,8 @@
                       ></i>
                     </button>
                   </li>
-                  <li>
-                    <a href="./signup-popup.html" class="button">SIGN UP</a>
+                  <li class="button">
+                    <a href="./signup-popup.html">SIGN UP</a>
                   </li>
                 </ul>
               </div>
@@ -1343,5 +1341,6 @@
       </div>
     </footer>
     <script src="./assets/js/theme-switcher.js"></script>
+    <script src="./assets/js/navbar-toggler.js"></script>
   </body>
 </html>

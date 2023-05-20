@@ -20,7 +20,7 @@
 
 @layer components {
     .button {
-        @apply bg-red rounded-full px-6 py-3 text-white;
+        @apply bg-red rounded-full px-6 py-3 h-fit text-white;
     }
 
     .flip-button {
