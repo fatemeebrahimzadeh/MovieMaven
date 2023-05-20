@@ -403,21 +403,23 @@
                 Release date Ascending
               </option>
             </select>
-            <a
+            <button
+              id="movie-list-btn"
               class="block text-center sm:basis-1/12 hover:text-red hover:dark:text-yellow sm:flex sm:items-center sm:justify-center sm:border-r-[1px] sm:border-light-secondary sm:dark:border-dark-100 w-full h-full"
               href="#"
             >
               <i class="fa fa-fw fa-sm fa-list"></i>
-            </a>
-            <a
+            </button>
+            <button
+              id="movie-grid-btn"
               class="block text-center sm:basis-1/12 hover:text-red dark:hover:text-yellow sm:flex sm:items-center sm:justify-center w-full h-full"
               href="#"
             >
               <i class="fa fa-fw fa-sm fa-th"></i>
-            </a>
+            </button>
           </div>
           <!-- replace grid to show -->
-          <section class="hidden movie-list gap-5 my-10">
+          <section id="movie-list" class="hidden movie-list gap-5 my-10">
             <article
               class="flex gap-3 flex-col items-center md:flex-row text-black dark:text-text"
             >
@@ -673,6 +675,7 @@
             </article>
           </section>
           <section
+            id="movie-grid"
             class="movie-grid my-10 grid gap-5 grid-cols-1 sm:grid-cols-2"
           >
             <article
@@ -1395,5 +1398,6 @@
     <script src="./assets/js/theme-switcher.js"></script>
     <script src="./assets/js/navbar-toggler.js"></script>
     <script src="./assets/js/signup-popup-toggler.js"></script>
+    <script src="./assets/js/movie-list-toggler.js"></script>
   </body>
 </html>
