@@ -1,5 +1,6 @@
 var navToggleBtn = document.getElementById("navbar-toggler");
+var dropDownList = document.getElementById("navbar-dropdown");
+
 navToggleBtn.addEventListener("click", function () {
-  var dropDownList = document.getElementById("navbar-dropdown");
   dropDownList.classList.toggle("hidden");
 });

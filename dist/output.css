@@ -824,6 +824,10 @@ body {
   z-index: 50;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .float-right {
   float: right;
 }
