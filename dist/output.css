@@ -980,6 +980,10 @@ video {
   height: 2.75rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1017,10 +1021,6 @@ video {
   height: 100vh;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .max-h-\[435px\] {
   max-height: 435px;
 }
@@ -1031,6 +1031,10 @@ video {
 
 .w-1 {
   width: 0.25rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-44 {
@@ -1068,10 +1072,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .min-w-\[200px\] {
@@ -1980,6 +1980,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1990,10 +1994,6 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-b {
@@ -2067,16 +2067,16 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-4 {
   border-width: 4px;
 }
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-x {
@@ -2174,14 +2174,14 @@ video {
   border-color: rgb(217 230 236 / var(--tw-border-opacity));
 }
 
-.border-yellow {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 248 54 / var(--tw-border-opacity));
-}
-
 .border-red {
   --tw-border-opacity: 1;
   border-color: rgb(221 0 63 / var(--tw-border-opacity));
+}
+
+.border-yellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 248 54 / var(--tw-border-opacity));
 }
 
 .bg-\[\#1692bb\] {
@@ -3146,34 +3146,9 @@ video {
   font-weight: 300;
 }
 
-.before\:box-border::before {
-  content: var(--tw-content);
-  box-sizing: border-box;
-}
-
-.before\:flex::before {
-  content: var(--tw-content);
-  display: flex;
-}
-
-.before\:h-12::before {
-  content: var(--tw-content);
-  height: 3rem;
-}
-
-.before\:h-\[64px\]::before {
-  content: var(--tw-content);
-  height: 64px;
-}
-
 .before\:h-\[16px\]::before {
   content: var(--tw-content);
   height: 16px;
-}
-
-.before\:w-12::before {
-  content: var(--tw-content);
-  width: 3rem;
 }
 
 .before\:w-4::before {
@@ -3181,51 +3156,14 @@ video {
   width: 1rem;
 }
 
-.before\:w-\[64px\]::before {
-  content: var(--tw-content);
-  width: 64px;
-}
-
 .before\:w-\[16px\]::before {
   content: var(--tw-content);
   width: 16px;
 }
 
-.before\:items-center::before {
-  content: var(--tw-content);
-  align-items: center;
-}
-
-.before\:justify-center::before {
-  content: var(--tw-content);
-  justify-content: center;
-}
-
-.before\:rounded-full::before {
-  content: var(--tw-content);
-  border-radius: 9999px;
-}
-
-.before\:border-2::before {
-  content: var(--tw-content);
-  border-width: 2px;
-}
-
-.before\:border-red::before {
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-color: rgb(221 0 63 / var(--tw-border-opacity));
-}
-
 .before\:text-center::before {
   content: var(--tw-content);
   text-align: center;
-}
-
-.before\:text-4xl::before {
-  content: var(--tw-content);
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .before\:content-chevron-right::before {
@@ -3253,18 +3191,8 @@ video {
   content: var(--tw-content);
 }
 
-.after\:content-\[\'ADD_TO_FAVORITE\'\]::after {
-  --tw-content: 'ADD TO FAVORITE';
-  content: var(--tw-content);
-}
-
 .after\:content-\[\'BUY_TICKET\'\]::after {
   --tw-content: 'BUY TICKET';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'SHARE\'\]::after {
-  --tw-content: 'SHARE';
   content: var(--tw-content);
 }
 
@@ -3376,6 +3304,11 @@ video {
   color: rgb(220 248 54 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-red {
+  --tw-text-opacity: 1;
+  color: rgb(221 0 63 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:border-0) {
   border-width: 0px;
 }
@@ -3433,6 +3366,11 @@ video {
   color: rgb(220 248 54 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-red) {
+  --tw-text-opacity: 1;
+  color: rgb(221 0 63 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:placeholder-text)::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(171 183 196 / var(--tw-placeholder-opacity));
@@ -3455,6 +3393,11 @@ video {
 
 .group:hover :is(.dark .group-hover\:dark\:bg-dark-backdrop) {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.group:hover :is(.dark .group-hover\:dark\:text-yellow) {
+  --tw-text-opacity: 1;
+  color: rgb(220 248 54 / var(--tw-text-opacity));
 }
 
 @media (max-width: 450px) {
