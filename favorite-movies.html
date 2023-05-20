@@ -254,10 +254,16 @@
                   </li>
                   <li>
                     <button
+                      id="theme-toggle"
                       class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
                     >
                       <i
-                        class="fa fa-sun fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
+                        id="theme-toggle-dark-icon"
+                        class="hidden fa fa-moon fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
+                      ></i>
+                      <i
+                        id="theme-toggle-light-icon"
+                        class="hidden fa fa-sun fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
                       ></i>
                     </button>
                   </li>
@@ -1336,5 +1342,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/js/theme-switcher.js"></script>
   </body>
 </html>
