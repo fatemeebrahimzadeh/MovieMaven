@@ -2,51 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font Dosis */
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Regular.otf");
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Medium.otf");
-    font-weight: medium;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Light.otf");
-    font-weight: light;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-Bold.otf");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-ExtraBold.otf");
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-ExtraLight.otf");
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url("../styles/fonts/Dosis-SemiBold.otf");
-    font-weight: 600;
-}
-
-/* font Dosis */
-
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -65,7 +20,7 @@
 
 @layer components {
     .button {
-        @apply bg-red rounded-full px-6 py-3 text-white;
+        @apply bg-red rounded-full px-6 py-3 h-fit text-white;
     }
 
     .flip-button {
@@ -81,5 +36,39 @@
     .flip-button::after {
         transition: transform 0.5s;
         /* transform-style: preserve-3d; */
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .hr-text {
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color: black;
+        text-align: center;
+        height: 1.5em;
+        opacity: 0.5;
+    }
+    .hr-text:before {
+        content: "";
+        background: linear-gradient(to right, transparent, #818078, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+    .hr-text:after {
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: black;
+        padding: 0 0.5em;
+        line-height: 1.5em;
+        color: #818078;
+        background-color: #fcfcfa;
     }
 }

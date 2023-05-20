@@ -52,214 +52,299 @@
   </head>
 
   <body
-    class="w-[100vw] h-[100vh] font-dosis font-semibold text-text text-sm dark:bg-dark-primary"
+    class="w-[100vw] h-[100vh] font-dosis font-semibold text-black dark:text-text text-sm dark:bg-dark-primary"
   >
     <header class="w-full h-[50%] bg-header bg-cover">
-      <div class="container flex flex-col h-full">
-        <nav>
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
-          >
-            <a href="#">
-              <img src="./assets/images/logo.png" alt="logo" />
-            </a>
-            <button
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="inline-flex items-center p-2 ml-3 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-              aria-controls="navbar-dropdown"
-              aria-expanded="false"
+      <div class="w-full h-full bg-lighten dark:bg-transparent">
+        <div class="container flex flex-col h-full">
+          <nav>
+            <div
+              class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
             >
-              <span class="sr-only">Open main menu</span>
-              <img
-                class="w-6 h-6"
-                src="./assets/svgs/mobile-nav-bar-icon.svg"
-                alt="nav-bar-icon"
-              />
-            </button>
-            <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
-              <ul
-                class="flex flex-col items-center p-4 lg:p-0 mt-4 lg:flex-row lg:space-x-8 lg:mt-0"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    aria-current="page"
-                    >HOME</a
-                  >
-                </li>
-                <li class="group relative">
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
-                  >
-                    MOVIES
-                    <img
-                      class="w-5 h-5 ml-1"
-                      src="./assets/svgs/bottom-arrow.svg"
-                      alt="bottom-arrow"
-                    />
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-sm text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Action</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Comedy</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Drama</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="group relative">
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-yellow lg:p-0 lg:w-auto"
-                  >
-                    CELEBRITIES
-                    <img
-                      class="w-5 h-5 ml-1"
-                      src="./assets/svgs/bottom-arrow.svg"
-                      alt="bottom-arrow"
-                    />
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.35rem] -left-5 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-sm text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Actors</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Actresses</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:text-yellow"
-                          >Directors</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    >NEWS</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 hover:text-yellow lg:p-0"
-                    >COMMUNITY</a
-                  >
-                </li>
-                <li>
-                  <button class="button">SIGN UP</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <form class="hidden sm:block border-dark-primary bg-[#233a50] border-4">
-          <div class="flex">
-            <div class="flex group relative">
-              <button
-                id="states-button"
-                data-dropdown-toggle="dropdown-states"
-                class="flex-shrink-0 z-10 inline-flex items-center py-2.5 mx-4 text-sm font-medium text-center rounded-l-lg focus:outline-none border-r-2 border-black"
-                type="button"
-              >
-                TV SHOWS
+              <a href="#">
                 <img
-                  class="w-5 h-5 ml-1"
-                  src="./assets/svgs/bottom-arrow.svg"
-                  alt="bottom-arrow"
+                  class="!max-w-[100px] sm:!max-w-[119px]"
+                  src="assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
+              <button
+                id="navbar-toggler"
+                type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm lg:hidden"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img
+                  class="w-6 h-6"
+                  src="./assets/svgs/mobile-nav-bar-icon.svg"
+                  alt="nav-bar-icon"
                 />
               </button>
               <div
-                id="dropdown-states"
-                class="z-10 hidden group-hover:inline-block group-hover:absolute top-[2.65rem] -left-2 rounded-lg divide-y divide-gray-100 shadow-lg w-44 bg-dark-triority"
+                class="hidden rounded-lg w-full z-20 bg-light-secondary dark:bg-dark-secondary absolute top-[112px] sm:top-[122px] left-0 lg:static lg:block lg:w-auto lg:bg-transparent lg:dark:bg-transparent"
+                id="navbar-dropdown"
               >
                 <ul
-                  class="py-2 text-sm text-gray-200"
-                  aria-labelledby="states-button"
+                  class="flex flex-col items-center p-4 lg:p-0 lg:flex-row lg:space-x-8 lg:mt-0"
                 >
                   <li>
-                    <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      aria-current="page"
+                      >HOME</a
                     >
-                      <div class="inline-flex items-center">TV SHOWS</div>
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 group-hover:text-red dark:group-hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      MOVIES
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
                     </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.75rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Comedy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Drama</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      CELEBRITIES
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Actors</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Actresses</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Directors</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      >NEWS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      >COMMUNITY</a
+                    >
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      LANGUAGE
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <button
+                            type="button"
+                            class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >
+                            <div class="inline-flex items-center">
+                              <img
+                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                src="./assets/svgs/flags/United-States.svg"
+                                alt="United-States-flag"
+                              />
+                              United States
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            type="button"
+                            class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >
+                            <div class="inline-flex items-center">
+                              <img
+                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                src="./assets/svgs/flags/Iran.svg"
+                                alt="Iran-flag"
+                              />
+                              Persian
+                            </div>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li>
                     <button
-                      type="button"
-                      class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                      id="theme-toggle"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
                     >
-                      <div class="inline-flex items-center">OTHERS</div>
+                      <i
+                        id="theme-toggle-dark-icon"
+                        class="hidden fa fa-moon fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
+                      ></i>
+                      <i
+                        id="theme-toggle-light-icon"
+                        class="hidden fa fa-sun fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
+                      ></i>
                     </button>
+                  </li>
+                  <li class="button">
+                    <button id="signup-btn">SIGN UP</button>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="relative w-full">
-              <input
-                type="search"
-                id="search-dropdown"
-                class="block p-2.5 w-full z-20 text-sm bg-transparent placeholder-text text-text"
-                placeholder="Search for a movie, TV Show or celebrity that you are looking for"
-                required
-              />
-              <button
-                type="submit"
-                class="absolute top-0 right-0 p-2.5 text-sm font-medium text-text"
-              >
-                <img
-                  class="w-5 h-5"
-                  src="./assets/svgs/search-icon.svg"
-                  alt="search-icon"
+          </nav>
+          <form
+            class="hidden sm:block border-dark-primary bg-[#233a50] border-4"
+          >
+            <div class="flex">
+              <div class="flex group relative">
+                <button
+                  id="states-button"
+                  data-dropdown-toggle="dropdown-states"
+                  class="flex-shrink-0 z-10 inline-flex items-center py-2.5 mx-4 text-gray-200 dark:text-black group-hover:text-red group-hover:dark:text-yellow text-sm font-medium text-center rounded-l-lg focus:outline-none border-r-2 border-black"
+                  type="button"
+                >
+                  TV SHOWS
+                  <i
+                    class="fa fa-chevron-down fa-sm fa-fw ml-1 text-gray-200 dark:text-black group-hover:text-red group-hover:dark:text-yellow"
+                  ></i>
+                </button>
+                <div
+                  id="dropdown-states"
+                  class="z-10 hidden group-hover:inline-block group-hover:absolute top-[2.65rem] -left-2 rounded-lg divide-y divide-gray-100 shadow-lg w-44 bg-dark-triority"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-200"
+                    aria-labelledby="states-button"
+                  >
+                    <li>
+                      <button
+                        type="button"
+                        class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                      >
+                        <div class="inline-flex items-center">TV SHOWS</div>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white"
+                      >
+                        <div class="inline-flex items-center">OTHERS</div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="block p-2.5 w-full z-20 text-sm bg-transparent placeholder-text text-text"
+                  placeholder="Search for a movie, TV Show or celebrity that you are looking for"
+                  required
                 />
-              </button>
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 p-2.5 text-sm font-medium text-text"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/svgs/search-icon.svg"
+                    alt="search-icon"
+                  />
+                </button>
+              </div>
             </div>
+          </form>
+          <div class="flex flex-col items-center justify-center gap-5 h-full">
+            <h1 class="text-2xl sm:text-4xl text-black dark:text-white">
+              FAVORITE MOVIES
+            </h1>
+            <ul class="flex breadcrumb">
+              <li class="text-black dark:text-blue"><a href="#">HOME</a></li>
+              <li class="before:content-chevron-right">FAVORITE MOVIES</li>
+            </ul>
           </div>
-        </form>
-        <div class="flex flex-col items-center justify-center gap-5 h-full">
-          <h1 class="text-2xl sm:text-4xl text-white">FAVORITE MOVIES</h1>
-          <ul class="flex breadcrumb">
-            <li class="text-blue"><a href="#">HOME</a></li>
-            <li class="before:content-chevron-right">FAVORITE MOVIES</li>
-          </ul>
         </div>
       </div>
     </header>
@@ -270,7 +355,7 @@
             class="filter gap-2 sm:gap-0 sm:bg-light-backgroundColor dark:bg-transparent sm:border-y-[1px] sm:border-light-secondary sm:dark:border-dark-100 flex flex-col items-center sm:flex-row text-xs sm:h-8"
           >
             <div
-              class="flex flex-col justify-center sm:flex-row sm:justify-between sm:items-center sm:p-1 font-light sm:border-r-[1px] sm:border-light-secondary sm:dark:border-dark-100 sm:basis-1/2 w-full h-full"
+              class="flex flex-col justify-center sm:flex-row sm:justify-between sm:items-center sm:p-1 font-light sm:border-r-[1px] sm:border-light-secondary sm:dark:border-dark-100 sm:basis-8/12 w-full h-full"
             >
               <span class="text-center"
                 >Found <span class="text-blue">1,608 movies</span> in
@@ -279,7 +364,7 @@
               <span class="text-center">Sort by:</span>
             </div>
             <select
-              class="max-w-[150px] border-[1px] sm:basis-1/3 font-light flex-shrink-0 inline-flex flex-col sm:flex-row sm:items-center sm:h-full text-center sm:border-0 sm:border-r-[1px] border-light-secondary dark:border-dark-100 text-black dark:text-text bg-transparent"
+              class="max-w-[150px] border-[1px] sm:basis-2/12 font-light flex-shrink-0 inline-flex flex-col sm:flex-row sm:items-center sm:h-full text-center sm:border-0 sm:border-r-[1px] border-light-secondary dark:border-dark-100 text-black dark:text-text bg-transparent"
             >
               <option
                 class="bg-light-secondary dark:bg-dark-secondary"
@@ -318,20 +403,23 @@
                 Release date Ascending
               </option>
             </select>
-            <a
+            <button
+              id="movie-list-btn"
               class="block text-center sm:basis-1/12 hover:text-red hover:dark:text-yellow sm:flex sm:items-center sm:justify-center sm:border-r-[1px] sm:border-light-secondary sm:dark:border-dark-100 w-full h-full"
               href="#"
             >
               <i class="fa fa-fw fa-sm fa-list"></i>
-            </a>
-            <a
+            </button>
+            <button
+              id="movie-grid-btn"
               class="block text-center sm:basis-1/12 hover:text-red dark:hover:text-yellow sm:flex sm:items-center sm:justify-center w-full h-full"
               href="#"
             >
               <i class="fa fa-fw fa-sm fa-th"></i>
-            </a>
+            </button>
           </div>
-          <section class="movie-list grid gap-5 my-10">
+          <!-- replace grid to show -->
+          <section id="movie-list" class="hidden movie-list gap-5 my-10">
             <article
               class="flex gap-3 flex-col items-center md:flex-row text-black dark:text-text"
             >
@@ -586,6 +674,295 @@
               </div>
             </article>
           </section>
+          <section
+            id="movie-grid"
+            class="movie-grid my-10 grid gap-5 grid-cols-1 sm:grid-cols-2"
+          >
+            <article
+              class="h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
+            >
+              <div class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="./assets/images/mv1.jpg"
+                  alt="mv1"
+                />
+              </div>
+              <div class="flex-col px-4">
+                <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
+                </div>
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
+              </div>
+            </article>
+            <article
+              class="h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
+            >
+              <div class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="/assets/images/mv2.jpg"
+                  alt="mv2"
+                />
+              </div>
+              <div class="flex-col px-4">
+                <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
+                </div>
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
+              </div>
+            </article>
+            <article
+              class="bg-light-backgroundColor dark:bg-dark-secondary sm:col-span-2 rounded-md shadow-lg"
+            >
+              <div
+                class="flex flex-col items-center md:items-start md:flex-row px-4 max-w-4xl"
+              >
+                <div class="flex-none">
+                  <img
+                    src="assets/images/mv4.jpg"
+                    alt="pic"
+                    class="h-72 w-56 rounded-md transform -translate-y-4 border-4 border-gray-300 shadow-lg"
+                  />
+                </div>
+
+                <div class="flex-col">
+                  <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
+                  <hr class="hr-text" data-content="" />
+                  <div class="text-md flex justify-between px-4 my-2">
+                    <span class="font-bold"
+                      >2h 2min | Crime, Drama, Thriller</span
+                    >
+                    <span class="font-bold"></span>
+                  </div>
+                  <p class="block px-4 my-4 text-sm text-left">
+                    In Gotham City, mentally troubled comedian Arthur Fleck is
+                    disregarded and mistreated by society. He then embarks on a
+                    downward spiral of revolution and bloody crime. This path
+                    brings him face-to-face with his alter-ego: the Joker.
+                  </p>
+
+                  <p class="flex text-md px-4 my-2">
+                    Rating: 9.0/10
+                    <span class="font-bold px-2">|</span>
+                    Mood: Dark
+                  </p>
+
+                  <div class="text-xs">
+                    <button
+                      type="button"
+                      class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                    >
+                      TRAILER
+                    </button>
+
+                    <button
+                      type="button"
+                      class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                    >
+                      IMDB
+                    </button>
+
+                    <button
+                      type="button"
+                      class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                    >
+                      TICKET
+                    </button>
+                  </div>
+                  <!--             <p>ICON BTNS</p> -->
+                </div>
+              </div>
+            </article>
+            <article
+              class="h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
+            >
+              <div class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="/assets/images/mv3.jpg"
+                  alt="mv3"
+                />
+              </div>
+              <div class="flex-col px-4">
+                <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
+                </div>
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
+              </div>
+            </article>
+            <article
+              class="sm:row-span-2 h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
+            >
+              <div class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="/assets/images/mv5.jpg"
+                  alt="/assets/images/mv2.jpg"
+                />
+              </div>
+              <div class="flex-col px-4">
+                <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
+                </div>
+                <p class="hidden md:block px-4 my-4 text-sm text-left">
+                  In Gotham City, mentally troubled comedian Arthur Fleck is
+                  disregarded and mistreated by society. He then embarks on a
+                  downward spiral of revolution and bloody crime. This path
+                  brings him face-to-face with his alter-ego: the Joker.
+                </p>
+
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
+              </div>
+            </article>
+            <article
+              class="h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
+            >
+              <div class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="/assets/images/mv2.jpg"
+                  alt="mv2"
+                />
+              </div>
+              <div class="flex-col px-4">
+                <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
+                </div>
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
+              </div>
+            </article>
+          </section>
           <div
             class="pagination sm:bg-light-backgroundColor dark:bg-transparent sm:border-y-[1px] sm:border-light-secondary sm:dark:border-dark-100 flex flex-col items-center gap-3 sm:gap-0 sm:flex-row text-xs sm:h-8"
           >
@@ -803,130 +1180,224 @@
         </aside>
       </div>
     </main>
-    <footer class="bg-footer bg-cover py-10">
-      <div
-        class="container flex flex-col gap-5 lg:gap-0 md:flex-row md:flex-wrap justify-between"
-      >
-        <section
-          class="flex flex-col gap-5 basis-1/5 justify-between md:basis-full md:items-center lg:items-start lg:basis-1/5"
+    <footer class="bg-footer bg-cover">
+      <div class="w-full h-full bg-lighten dark:bg-transparent py-10">
+        <div
+          class="container flex flex-col gap-5 lg:gap-0 md:flex-row md:flex-wrap justify-between"
         >
-          <img
-            class="!max-w-[119px]"
-            src="./assets/images/logo.png"
-            alt="logo"
-          />
-          <div class="info basis-1/5 grid gap-5">
-            <p class="font-extralight">
-              5th Avenue st, manhattan
-              <br />
-              New York, NY 10001
-            </p>
-            <p class="font-extralight">
-              Call us:
-              <a class="text-white hover:text-yellow" href="#"
-                >(+01) 202 342 6789</a
-              >
-            </p>
-          </div>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Resources</h4>
-          <ul class="flex flex-col items-baseline gap-3">
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">About</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Blockbuster</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">Forums</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">Blog</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Help Center</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Legal</h4>
-          <ul class="flex flex-col items-baseline gap-3">
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Term Of Use</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight">Security</a>
-            </li>
-          </ul>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Account</h4>
-          <ul class="flex flex-col items-baseline gap-3">
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >My Account</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Watchlist</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >Collections</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-yellow font-extralight"
-                >User Guide</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="grid gap-5 basis-1/5">
-          <h4 class="text-white text-lg">Newsletter</h4>
-          <p class="font-extralight">
-            Subscribe to our newsletter system now
-            <br />
-            to get latest news from us.
-          </p>
-          <div class="relative w-full">
-            <input
-              type="email"
-              class="block w-full text-sm bg-transparent placeholder-text border-[1px] border-dark-100 rounded-sm px-5 py-1 placeholder:font-extralight"
-              placeholder="Enter your email"
-              required
+          <section
+            class="flex flex-col gap-5 basis-1/5 justify-between md:basis-full md:items-center lg:items-start lg:basis-1/5"
+          >
+            <img
+              class="!max-w-[119px]"
+              src="./assets/images/logo.png"
+              alt="logo"
             />
-            <button
-              type="submit"
-              class="absolute top-0 right-0 p-1 text-base font-extralight text-text"
-            >
-              <i class="fa fa-envelope fa-sm fa-fw"></i>
-            </button>
-          </div>
-          <a class="text-xs text-red" href="#"
-            >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
-          ></a>
-        </section>
+            <div class="info basis-1/5 grid gap-5">
+              <p class="font-light">
+                5th Avenue st, manhattan
+                <br />
+                New York, NY 10001
+              </p>
+              <p class="font-light">
+                Call us:
+                <a
+                  class="text-white hover:text-red dark:hover:text-yellow"
+                  href="#"
+                  >(+01) 202 342 6789</a
+                >
+              </p>
+            </div>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Resources</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Blockbuster</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Forums</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Help Center</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Legal</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Term Of Use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Account</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >My Account</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Watchlist</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Collections</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >User Guide</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Newsletter</h4>
+            <p class="font-light">
+              Subscribe to our newsletter system now
+              <br />
+              to get latest news from us.
+            </p>
+            <div class="relative w-full">
+              <input
+                type="email"
+                class="block placeholder:text-black dark:placeholder:text-text w-full text-sm bg-transparent placeholder-text border-[1px] border-dark-100 rounded-sm px-5 py-1 placeholder:font-light"
+                placeholder="Enter your email"
+                required
+              />
+              <button
+                type="submit"
+                class="absolute top-0 right-0 p-1 text-base font-light text-black dark:text-text"
+              >
+                <i class="fa fa-envelope fa-sm fa-fw"></i>
+              </button>
+            </div>
+            <a class="text-xs text-red" href="#"
+              >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
+            ></a>
+          </section>
+        </div>
       </div>
     </footer>
+    <section
+      id="signup-popup"
+      class="hidden z-50 overlay fixed w-screen h-screen top-0 left-0 items-center justify-center bg-dark-backdrop font-dosis"
+    >
+      <div class="signup-content bg-white w-96 flex flex-col items-center p-5">
+        <h2 class="text-black text-2xl font-dosis">SIGN UP</h2>
+        <form action="#" class="w-full p-5">
+          <label class="text-black" for="username">USERNAME:</label>
+          <input
+            name="username"
+            type="text"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="email">YOUR EMAIL:</label>
+          <input
+            name="email"
+            type="email"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="password">PASSWORD:</label>
+          <input
+            name="password"
+            type="password"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <label class="text-black" for="retype-password"
+            >RE-TYPE PASSWORD:</label
+          >
+          <input
+            name="retype-password"
+            type="password"
+            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
+            required
+          />
+          <button class="w-full bg-red px-5 py-3 text-white mb-5" type="submit">
+            SIGN UP
+          </button>
+
+          <button
+            type="button"
+            class="py-2 px-4 flex justify-center items-center bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-sm"
+          >
+            <img class="mr-2" src="./assets/svgs/github.svg" alt="github" />
+            Sign in with GitHub
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- end signup form popup -->
+    <script src="./assets/js/theme-switcher.js"></script>
+    <script src="./assets/js/navbar-toggler.js"></script>
+    <script src="./assets/js/signup-popup-toggler.js"></script>
+    <script src="./assets/js/movie-list-toggler.js"></script>
   </body>
 </html>
