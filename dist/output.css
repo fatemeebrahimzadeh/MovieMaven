@@ -625,10 +625,6 @@ video {
   /* transform-style: preserve-3d; */
 }
 
-body {
-  text-align: center;
-}
-
 .hr-text {
   line-height: 1em;
   position: relative;
@@ -1105,12 +1101,12 @@ body {
   max-height: 435px;
 }
 
-.min-h-\[50\%\] {
-  min-height: 50%;
-}
-
 .min-h-\[36px\] {
   min-height: 36px;
+}
+
+.min-h-\[50\%\] {
+  min-height: 50%;
 }
 
 .w-1 {
@@ -3830,6 +3826,10 @@ body {
     display: none;
   }
 
+  .lg\:h-\[50\%\] {
+    height: 50%;
+  }
+
   .lg\:min-h-full {
     min-height: 100%;
   }
@@ -3840,6 +3840,10 @@ body {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:basis-1\/3 {
