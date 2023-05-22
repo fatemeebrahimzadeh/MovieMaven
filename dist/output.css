@@ -1109,6 +1109,10 @@ body {
   min-height: 50%;
 }
 
+.min-h-\[36px\] {
+  min-height: 36px;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -3824,6 +3828,10 @@ body {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:min-h-full {
+    min-height: 100%;
   }
 
   .lg\:w-\[400px\] {
