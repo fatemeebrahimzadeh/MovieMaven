@@ -38,10 +38,6 @@
         /* transform-style: preserve-3d; */
     }
 
-    body {
-        text-align: center;
-    }
-
     .hr-text {
         line-height: 1em;
         position: relative;
