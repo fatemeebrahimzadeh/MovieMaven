@@ -792,18 +792,6 @@ video {
   top: 2.65rem;
 }
 
-.top-\[1rem\] {
-  top: 1rem;
-}
-
-.top-\[1\.4rem\] {
-  top: 1.4rem;
-}
-
-.top-\[1\.1rem\] {
-  top: 1.1rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -3638,10 +3626,6 @@ video {
 @media (min-width: 640px) {
   .sm\:top-\[122px\] {
     top: 122px;
-  }
-
-  .sm\:top-\[120px\] {
-    top: 120px;
   }
 
   .sm\:col-span-2 {
