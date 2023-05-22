@@ -3826,10 +3826,6 @@ video {
     display: none;
   }
 
-  .lg\:h-\[50\%\] {
-    height: 50%;
-  }
-
   .lg\:min-h-full {
     min-height: 100%;
   }
@@ -3840,10 +3836,6 @@ video {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 
   .lg\:basis-1\/3 {
