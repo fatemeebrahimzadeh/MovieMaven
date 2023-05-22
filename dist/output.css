@@ -657,6 +657,13 @@ video {
   background-color: #fcfcfa;
 }
 
+.overflow-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Number of lines to show before truncating */
+  -webkit-box-orient: vertical;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1097,8 +1104,16 @@ video {
   height: 100vh;
 }
 
+.max-h-14 {
+  max-height: 3.5rem;
+}
+
 .max-h-\[435px\] {
   max-height: 435px;
+}
+
+.max-h-20 {
+  max-height: 5rem;
 }
 
 .min-h-\[36px\] {
@@ -2808,6 +2823,10 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
