@@ -1,10 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark overflow-x-hidden">
   <head>
+    <!-- SEO -->
+
+    <meta
+      name="description"
+      content="View and manage your MovieMaven user profile. Customize your preferences, track your movie activity, and connect with other movie enthusiasts."
+    />
+
+    <meta property="og:title" content="MovieMaven - User Profile" />
+    <meta
+      property="og:description"
+      content="View and manage your MovieMaven user profile. Customize your preferences, track your movie activity, and connect with other movie enthusiasts."
+    />
+
+    <!-- SEO -->
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font -->
+
+    <script
+      src="https://kit.fontawesome.com/1a4dd4a998.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>MovieMaven - User Profile</title>
   </head>
-  <body></body>
+  <body
+    class="w-[100vw] h-[100vh] font-dosis font-semibold text-black dark:text-text text-sm dark:bg-dark-primary"
+  >
+    <header class="w-full h-[50%] bg-header bg-cover">
+      <div class="w-full h-full bg-lighten dark:bg-transparent">
+        <div class="container flex flex-col h-full">
+          <nav>
+            <div
+              class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8"
+            >
+              <a href="#">
+                <img
+                  class="!max-w-[100px] sm:!max-w-[119px]"
+                  src="./assets/images/logo.png"
+                  alt="logo"
+                />
+              </a>
+              <button
+                id="navbar-toggler"
+                type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm lg:hidden"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img
+                  class="w-6 h-6"
+                  src="./assets/svgs/mobile-nav-bar-icon.svg"
+                  alt="nav-bar-icon"
+                />
+              </button>
+              <div
+                class="hidden rounded-lg w-full z-20 bg-light-secondary dark:bg-dark-secondary absolute top-[112px] sm:top-[122px] left-0 lg:static lg:block lg:w-auto lg:bg-transparent lg:dark:bg-transparent"
+                id="navbar-dropdown"
+              >
+                <ul
+                  class="flex flex-col items-center p-4 lg:p-0 lg:flex-row lg:space-x-8 lg:mt-0"
+                >
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      aria-current="page"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 group-hover:text-red dark:group-hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      MOVIES
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.75rem] lg:top-[1.1rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Comedy</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Drama</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      CELEBRITIES
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] lg:top-[1.1rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Actors</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Actresses</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-4 py-2 hover:text-red dark:hover:text-yellow"
+                            >Directors</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      >NEWS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
+                      >COMMUNITY</a
+                    >
+                  </li>
+                  <li class="group relative">
+                    <button
+                      id="dropdownNavbarLink"
+                      data-dropdown-toggle="dropdownNavbar"
+                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
+                    >
+                      LANGUAGE
+                      <i
+                        class="fa fa-chevron-down fa-sm fa-fw ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div
+                      id="dropdownNavbar"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] lg:top-[1.1rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                    >
+                      <ul
+                        class="py-2 text-sm text-gray-400"
+                        aria-labelledby="dropdownLargeButton"
+                      >
+                        <li>
+                          <button
+                            type="button"
+                            class="inline-flex w-full px-4 py-2 text-sm hover:text-red dark:hover:text-yellow"
+                          >
+                            <div class="inline-flex items-center">
+                              <img
+                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                src="./assets/svgs/flags/United-States.svg"
+                                alt="United-States-flag"
+                              />
+                              United States
+                            </div>
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            type="button"
+                            class="inline-flex w-full px-4 py-2 text-sm hover:text-red dark:hover:text-yellow"
+                          >
+                            <div class="inline-flex items-center">
+                              <img
+                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                src="./assets/svgs/flags/Iran.svg"
+                                alt="Iran-flag"
+                              />
+                              Persian
+                            </div>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button
+                      id="theme-toggle"
+                      class="flex items-center justify-between min-h-[36px] w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:min-h-full lg:p-0 lg:w-auto"
+                    >
+                      <i
+                        id="theme-toggle-dark-icon"
+                        class="hidden fa fa-moon fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
+                      ></i>
+                      <i
+                        id="theme-toggle-light-icon"
+                        class="hidden fa fa-sun fa-sm fa-fw ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow"
+                      ></i>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="./profile.html">
+                      <img
+                        class="m-2"
+                        src="./assets/images/author.png"
+                        alt="user"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="py-10">
+      <div class="container flex justify-center items-center -mt-52 lg:-mt-48">
+        <section
+          class="signup-content bg-light-backgroundColor dark:bg-dark-secondary dark:border-2 border-dark-800 w-full flex flex-col items-center p-5"
+        >
+          <h1 class="hidden text-black text-2xl font-dosis">PROFILE</h1>
+          <div
+            class="w-28 h-28 rounded-full bg-white dark:bg-dark-triority flex justify-center items-center -mt-14 lg:-mt-10"
+          >
+            <label for="fileInput" class="cursor-pointer">
+              <i class="fa fa-fw fa-md fa-camera"></i>
+            </label>
+            <input id="fileInput" type="file" class="sr-only" />
+          </div>
+
+          <form action="#" class="w-full p-5">
+            <label for="username">USERNAME:</label>
+            <input
+              name="username"
+              type="text"
+              value="fatemeebrahimzadeh"
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <label for="email">YOUR EMAIL:</label>
+            <input
+              name="email"
+              type="email"
+              disabled
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs disabled:bg-light-secondary dark:disabled:bg-dark-primary"
+              value="fateme.ebrahimzadeh20@gmail.com"
+              required
+            />
+            <label for="firstname">FIRSTNAME:</label>
+            <input
+              name="firstname"
+              type="text"
+              value="fateme"
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <label for="lastname">LASTNAME:</label>
+            <input
+              name="lastname"
+              type="text"
+              value="ebrahimzade"
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <label for="address">ADDRESS:</label>
+            <input
+              name="address"
+              type="text"
+              value="ISF, Bahonar st. "
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <label for="phone-number">PHONE NUMBER:</label>
+            <input
+              name="phone-number"
+              type="text"
+              value="+98 913 *** 7798"
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <label for="password">PASSWORD:</label>
+            <input
+              name="password"
+              type="password"
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <label for="retype-password">RE-TYPE PASSWORD:</label>
+            <input
+              name="retype-password"
+              type="password"
+              class="block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs"
+              required
+            />
+            <button class="w-full bg-red px-5 py-3 text-white" type="submit">
+              EDIT PROFILE
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-footer bg-cover">
+      <div class="w-full h-full bg-lighten dark:bg-transparent py-10">
+        <div
+          class="container flex flex-col gap-5 lg:gap-0 md:flex-row md:flex-wrap justify-between"
+        >
+          <section
+            class="flex flex-col gap-5 basis-1/5 justify-between md:basis-full md:items-center lg:items-start lg:basis-1/5"
+          >
+            <img
+              class="!max-w-[119px]"
+              src="./assets/images/logo.png"
+              alt="logo"
+            />
+            <div class="info basis-1/5 grid gap-5">
+              <p class="font-light">
+                5th Avenue st, manhattan
+                <br />
+                New York, NY 10001
+              </p>
+              <p class="font-light">
+                Call us:
+                <a
+                  class="text-white hover:text-red dark:hover:text-yellow"
+                  href="#"
+                  >(+01) 202 342 6789</a
+                >
+              </p>
+            </div>
+          </section>
+          <section class="flex flex-col gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Resources</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Blockbuster</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Forums</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Help Center</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="flex flex-col gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Legal</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Term Of Use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Security</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="flex flex-col gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Account</h4>
+            <ul class="flex flex-col items-baseline gap-3">
+              <li>
+                <a
+                  href="./profile.html"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >My Account</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./watch-list.html"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Watchlist</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./favorite-movies.html"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >Collections</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-red dark:hover:text-yellow font-light"
+                  >User Guide</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="grid gap-5 basis-1/5">
+            <h4 class="text-white text-lg">Newsletter</h4>
+            <p class="font-light">
+              Subscribe to our newsletter system now
+              <br />
+              to get latest news from us.
+            </p>
+            <div class="relative w-full">
+              <input
+                type="email"
+                class="block placeholder:text-black dark:placeholder:text-text w-full text-sm bg-transparent placeholder-text border-[1px] border-dark-100 rounded-sm px-5 py-1 placeholder:font-light"
+                placeholder="Enter your email"
+                required
+              />
+              <button
+                type="submit"
+                class="absolute top-0 right-0 p-1 text-base font-light text-black dark:text-text"
+              >
+                <i class="fa fa-envelope fa-sm fa-fw"></i>
+              </button>
+            </div>
+            <a class="text-xs text-red" href="#"
+              >SUBSCRIBE NOW <i class="fa fa-chevron-right fa-sm fa-fw"></i
+            ></a>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/theme-switcher.js"></script>
+    <script src="./assets/js/navbar-toggler.js"></script>
+    <script src="./assets/js/signup-popup-toggler.js"></script>
+    <script src="./assets/js/movie-list-toggler.js"></script>
+  </body>
 </html>
