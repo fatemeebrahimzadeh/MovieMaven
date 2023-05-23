@@ -5,25 +5,22 @@
 
     <meta
       name="description"
-      content="Create and manage your favorite movie list on MovieMaven. Get personalized recommendations based on your favorite movies."
+      content="Browse and manage your watch list on MovieMaven. Add your favorite movies to the watch list and stay updated with the latest releases."
     />
     <link rel="canonical" href="https://www.yourdomain.com/index" />
-    <meta property="og:title" content="My Favorite Movies | MovieMaven" />
+    <meta property="og:title" content="MovieMaven - Watch List" />
     <meta
       property="og:description"
-      content="Create and manage your favorite movie list on MovieMaven. Get personalized recommendations based on your favorite movies."
+      content="Browse and manage your watch list on MovieMaven. Add your favorite movies to the watch list and stay updated with the latest releases."
     />
-    <meta
-      property="og:url"
-      content="https://www.domain.com/favorite-movies.html"
-    />
+    <meta property="og:url" content="https://www.domain.com/watch-list.html" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "WebPage",
-        "name": "My Favorite Movies",
-        "url": "https://www.yourdomain.com/favorites",
-        "description": "Create and manage your favorite movie list on MovieMaven. Get personalized recommendations based on your favorite movies."
+        "name": "Watch List",
+        "url": "https://www.yourdomain.com/Watch List",
+        "description": "Browse and manage your watch list on MovieMaven. Add your favorite movies to the watch list and stay updated with the latest releases."
       }
     </script>
 
@@ -48,7 +45,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <title>My Favorite Movies | MovieMaven</title>
+    <title>MovieMaven - Watch List</title>
   </head>
 
   <body
@@ -344,11 +341,11 @@
           </form>
           <div class="flex flex-col items-center justify-center gap-5 h-full">
             <h1 class="text-2xl sm:text-4xl text-black dark:text-white">
-              FAVORITE MOVIES
+              WATCH LIST
             </h1>
             <ul class="flex breadcrumb">
               <li class="text-black dark:text-blue"><a href="#">HOME</a></li>
-              <li class="before:content-chevron-right">FAVORITE MOVIES</li>
+              <li class="before:content-chevron-right">WATCH LIST</li>
             </ul>
           </div>
         </div>
@@ -798,65 +795,106 @@
               </div>
             </article>
             <article
-              class="bg-light-backgroundColor dark:bg-dark-secondary sm:col-span-2 rounded-md shadow-lg text-center"
+              class="sm:row-span-2 h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
             >
-              <div
-                class="flex flex-col items-center md:items-start md:flex-row px-4 max-w-4xl"
-              >
-                <a href="./single-movie.html" class="flex-none">
-                  <img
-                    src="./assets/images/mv4.jpg"
-                    alt="mv4"
-                    class="h-72 w-56 rounded-md transform -translate-y-4 border-4 border-gray-300 shadow-lg"
-                  />
-                </a>
-
-                <div class="flex-col">
-                  <p class="pt-4 text-2xl font-bold">MULHOLLAND PRIDE (2015)</p>
-                  <hr class="hr-text" data-content="" />
-                  <div class="text-md flex justify-between px-4 my-2">
-                    <span class="font-bold"
-                      >2h 2min | Crime, Drama, Thriller</span
-                    >
-                    <span class="font-bold"></span>
-                  </div>
-                  <p class="block px-4 my-4 text-sm text-left">
-                    In Gotham City, mentally troubled comedian Arthur Fleck is
-                    disregarded and mistreated by society. He then embarks on a
-                    downward spiral of revolution and bloody crime. This path
-                    brings him face-to-face with his alter-ego: the Joker.
-                  </p>
-
-                  <p class="flex text-md px-4 my-2">
-                    Rating: 9.0/10
-                    <span class="font-bold px-2">|</span>
-                    Mood: Dark
-                  </p>
-
-                  <div class="text-xs">
-                    <button
-                      type="button"
-                      class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
-                    >
-                      TRAILER
-                    </button>
-
-                    <button
-                      type="button"
-                      class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
-                    >
-                      IMDB
-                    </button>
-
-                    <button
-                      type="button"
-                      class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
-                    >
-                      TICKET
-                    </button>
-                  </div>
-                  <!--             <p>ICON BTNS</p> -->
+              <a href="./single-movie.html" class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="./assets/images/mv2.jpg"
+                  alt="mv2.jpg"
+                />
+              </a>
+              <div class="flex-col px-4">
+                <p
+                  class="pt-4 text-2xl font-bold overflow-hidden text-ellipsis"
+                >
+                  MULHOLLAND PRIDE (2015)
+                </p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
                 </div>
+                <p
+                  class="hidden md:block px-4 my-4 text-sm text-left text-ellipsis max-h-14 overflow-hidden leading-snug"
+                >
+                  In Gotham City, mentally troubled comedian Arthur Fleck is
+                  disregarded and mistreated by society. He then embarks on a
+                  downward spiral of revolution and bloody crime. This path
+                  brings him face-to-face with his alter-ego: the Joker.
+                </p>
+
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
+              </div>
+            </article>
+            <article
+              class="h-fit flex-grow bg-light-backgroundColor dark:bg-dark-secondary shadow-md rounded m-3"
+            >
+              <a href="./single-movie.html" class="h-3/4 w-full">
+                <img
+                  class="w-full h-full object-cover rounded-t"
+                  src="./assets/images/mv1.jpg"
+                  alt="mv1"
+                />
+              </a>
+              <div class="flex-col px-4">
+                <p
+                  class="pt-4 text-2xl font-bold overflow-hidden text-ellipsis"
+                >
+                  MULHOLLAND PRIDE MMMMMMMMMMMMMMMMMMMMMMMMMMMM(2015)
+                </p>
+                <hr class="hr-text" data-content="" />
+                <div class="text-md flex justify-between px-4 my-2">
+                  <span class="font-bold"
+                    >2h 2min | Crime, Drama, Thriller</span
+                  >
+                  <span class="font-bold"></span>
+                </div>
+                <p class="flex text-md px-4 my-2">
+                  Rating: 9.0/10
+                  <span class="font-bold px-2">|</span>
+                  Mood: Dark
+                </p>
+
+                <div class="text-xs">
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    TRAILER
+                  </button>
+
+                  <button
+                    type="button"
+                    class="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-900 focus:outline-none focus:shadow-outline"
+                  >
+                    IMDB
+                  </button>
+                </div>
+                <!--             <p>ICON BTNS</p> -->
               </div>
             </article>
             <article
@@ -1346,7 +1384,7 @@
               </li>
               <li>
                 <a
-                  href="./favorite-movies.html"
+                  href="./watch-list.html"
                   class="hover:text-red dark:hover:text-yellow font-light"
                   >Collections</a
                 >

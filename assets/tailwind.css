@@ -67,4 +67,10 @@
         color: #818078;
         background-color: #fcfcfa;
     }
+
+    .overflow-ellipsis {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+        -webkit-box-orient: vertical;
+    }
 }
