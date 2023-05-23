@@ -448,39 +448,42 @@
             <li
               class="text-red dark:text-yellow border-b-2 border-red dark:border-yellow p-2"
             >
-              OVERVIEW
+              <a href="#overview"> OVERVIEW </a>
             </li>
             <li
               class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
-              REVIEWS
+              <a href="#reviews">REVIEWS</a>
             </li>
             <li
               class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
-              CAST & CREW
+              <a href="#cast">CAST & CREW</a>
             </li>
             <li
               class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
-              MEDIA
+              <a href="#media">MEDIA</a>
             </li>
             <li
               class="p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow"
             >
-              RELATED MOVIES
+              <a href="#related-movies">RELATED MOVIES</a>
             </li>
           </ul>
           <div class="flex flex-col gap-10 md:flex-row md:gap-0">
             <div class="basis-3/4 md:pr-10 flex flex-col gap-10">
-              <p class="text-black dark:text-text font-light">
+              <p
+                id="overview"
+                class="text-black dark:text-text font-light scroll-m-10"
+              >
                 Tony Stark creates the Ultron Program to protect the world, but
                 when the peacekeeping program becomes hostile, The Avengers go
                 into action to try and defeat a virtually impossible enemy
                 together. Earth's mightiest heroes must come together once again
                 to protect the world from global extinction.
               </p>
-              <div>
+              <div id="media" class="scroll-m-10">
                 <header
                   class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 border-b-[1px] border-dark-100"
                 >
@@ -539,7 +542,7 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div id="cast" class="scroll-m-10">
                 <header
                   class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 border-b-[1px] border-dark-100"
                 >
@@ -650,7 +653,7 @@
                   </article>
                 </div>
               </div>
-              <div>
+              <div id="reviews" class="scroll-m-10">
                 <header
                   class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 border-b-[1px] border-dark-100"
                 >
@@ -695,6 +698,126 @@
                     really do out do themselves in each film, there are no
                     problems watching it more than once.
                   </p>
+                </div>
+              </div>
+              <div id="related-movies" class="scroll-m-10">
+                <header
+                  class="flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between mb-5 border-b-[1px] border-dark-100"
+                >
+                  <h2 class="text-black dark:text-white">REALATED MOVIES</h2>
+                  <a
+                    class="text-sm hover:text-red dark:hover:text-yellow text-blue font-light"
+                    href="#"
+                    >VIEW ALL <i class="fa fa-chevron-right fa-sm fa-fw"></i
+                  ></a>
+                </header>
+                <div
+                  class="movie-list flex overflow-hidden gap-4 max-[450px]:justify-center"
+                >
+                  <div class="movie-item relative group">
+                    <img
+                      class="flex-shrink-0 object-cover"
+                      src="./assets/images/mv-item1.jpg"
+                    />
+                    <div
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                    >
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
+                    </div>
+                    <div
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
+                    >
+                      <h6
+                        class="text-white text-xl group-hover:text-red dark:group-hover:text-yellow"
+                      >
+                        <a href="#">Interstellar</a>
+                      </h6>
+                      <p>
+                        <i class="fa-fw fa-md fa-star text-[#f5b50a] fa"></i
+                        ><span class="text-lg text-white">7.4</span> /10
+                      </p>
+                    </div>
+                  </div>
+                  <div class="movie-item relative group">
+                    <img
+                      class="flex-shrink-0 object-cover"
+                      src="./assets/images/mv-item2.jpg"
+                    />
+                    <div
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                    >
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
+                    </div>
+                    <div
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
+                    >
+                      <h6
+                        class="text-white text-xl group-hover:text-red dark:group-hover:text-yellow"
+                      >
+                        <a href="#">The revenant</a>
+                      </h6>
+                      <p>
+                        <i class="fa-fw fa-md fa-star text-[#f5b50a] fa"></i
+                        ><span class="text-lg text-white">7.4</span> /10
+                      </p>
+                    </div>
+                  </div>
+                  <div class="movie-item relative group">
+                    <img
+                      class="flex-shrink-0 object-cover"
+                      src="./assets/images/mv-item3.jpg"
+                    />
+                    <div
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                    >
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
+                    </div>
+                    <div
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
+                    >
+                      <h6
+                        class="text-white text-xl group-hover:text-red dark:group-hover:text-yellow"
+                      >
+                        <a href="#">The walk</a>
+                      </h6>
+                      <p>
+                        <i class="fa-fw fa-md fa-star text-[#f5b50a] fa"></i
+                        ><span class="text-lg text-white">7.4</span> /10
+                      </p>
+                    </div>
+                  </div>
+                  <div class="movie-item relative group">
+                    <img
+                      class="flex-shrink-0 object-cover"
+                      src="./assets/images/mv-item4.jpg"
+                    />
+                    <div
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                    >
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
+                    </div>
+                    <div
+                      class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
+                    >
+                      <h6
+                        class="text-white text-xl group-hover:text-red dark:group-hover:text-yellow"
+                      >
+                        <a href="#">The walk</a>
+                      </h6>
+                      <p>
+                        <i class="fa-fw fa-md fa-star text-[#f5b50a] fa"></i
+                        ><span class="text-lg text-white">7.4</span> /10
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
