@@ -1265,6 +1265,58 @@ video {
 
 /* end region single-movie page */
 
+/* region profile page */
+
+.profile-input {
+  margin-bottom: 1.25rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(171 183 196 / var(--tw-text-opacity));
+}
+
+.profile-input::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(171 183 196 / var(--tw-placeholder-opacity));
+  font-weight: 300;
+}
+
+.profile-input::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(171 183 196 / var(--tw-placeholder-opacity));
+  font-weight: 300;
+}
+
+:is(.dark .profile-input) {
+  border-width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 58 80 / var(--tw-bg-opacity));
+}
+
+.profile-input.disabled:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 230 236 / var(--tw-bg-opacity));
+}
+
+:is(.dark .profile-input.disabled:disabled) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 13 24 / var(--tw-bg-opacity));
+}
+
+/* end region profile page */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1523,6 +1575,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.-mt-16 {
+  margin-top: -4rem;
 }
 
 .box-border {
@@ -4183,11 +4239,6 @@ video {
   text-align: center;
 }
 
-.disabled\:bg-light-secondary:disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 230 236 / var(--tw-bg-opacity));
-}
-
 .group:hover .group-hover\:absolute {
   position: absolute;
 }
@@ -4286,11 +4337,6 @@ video {
 :is(.dark .hover\:dark\:text-yellow):hover {
   --tw-text-opacity: 1;
   color: rgb(220 248 54 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:disabled\:bg-dark-primary:disabled) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 13 24 / var(--tw-bg-opacity));
 }
 
 :is(.dark .group:hover .dark\:group-hover\:text-yellow) {
@@ -4510,6 +4556,10 @@ video {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:-mt-12 {
+    margin-top: -3rem;
   }
 
   .lg\:block {
