@@ -19,58 +19,203 @@
 /* scrollbar */
 
 @layer components {
+    .text {
+        @apply text-black dark:text-white;
+    }
+
+    .item-hover {
+        @apply hover:text-red dark:hover:text-yellow;
+    }
+
     .button {
         @apply bg-red rounded-full px-6 py-3 h-fit text-white;
     }
 
     .flip-button {
-        position: relative;
-        transition: transform 0.5s;
+        @apply relative transition-transform duration-500 before:transition-transform before:duration-500 after:transition-transform after:duration-500;
     }
 
     .flip-button:hover {
         transform: rotateY(180deg);
     }
 
-    .flip-button::before,
-    .flip-button::after {
-        transition: transform 0.5s;
-        /* transform-style: preserve-3d; */
+    .hr-text {
+        @apply leading-[1em] relative outline-0 border-0 text-black text-center h-[1.5em] opacity-50;
     }
 
-    .hr-text {
-        line-height: 1em;
-        position: relative;
-        outline: 0;
-        border: 0;
-        color: black;
-        text-align: center;
-        height: 1.5em;
-        opacity: 0.5;
-    }
     .hr-text:before {
-        content: "";
-        background: linear-gradient(to right, transparent, #818078, transparent);
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        height: 1px;
+        @apply content-[''] absolute left-0 top-2/4 w-full h-[1px];
     }
+
+    .hr-text:before {
+        background: linear-gradient(to right, transparent, #818078, transparent);
+    }
+
     .hr-text:after {
-        content: attr(data-content);
-        position: relative;
-        display: inline-block;
-        color: black;
-        padding: 0 0.5em;
-        line-height: 1.5em;
-        color: #818078;
-        background-color: #fcfcfa;
+        @apply content-[attr(data-content)] relative inline-block text-black px-[0.5em] py-0 leading-[1.5em] bg-white;
     }
 
     .overflow-ellipsis {
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Number of lines to show before truncating */
-        -webkit-box-orient: vertical;
+        @apply overflow-hidden line-clamp-3 leading-normal;
     }
+
+    /* end region main page */
+
+    .drop-down-nav-btn {
+        @apply flex items-center justify-between w-full py-2 pl-3 pr-4 group-hover:text-red dark:group-hover:text-yellow lg:p-0 lg:w-auto;
+    }
+
+    .drop-down-nav-icon {
+        @apply ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow;
+    }
+
+    .theme-toggler-icon {
+        @apply ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow;
+    }
+
+    .status-btn {
+        @apply inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white;
+    }
+
+    .status-btn-text {
+        @apply inline-flex items-center;
+    }
+
+    .slider-image {
+        @apply flex-shrink-0 object-cover rounded-lg min-w-[200px] sm:min-w-[285px];
+    }
+
+    .slider-item__title-in {
+        @apply absolute left-0 bottom-0 ml-4 mb-4;
+    }
+
+    .slider-item__title-in__status {
+        @apply rounded-sm px-1 text-white font-bold;
+    }
+
+    .slider-item__title-in__heading {
+        @apply text-white text-xl group-hover:text-red dark:group-hover:text-yellow;
+    }
+
+    .tab-link {
+        @apply hover:text-red dark:hover:text-yellow;
+    }
+
+    .movie-item__hover {
+        @apply hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
+    }
+
+    .movie-item__title-in {
+        @apply hidden lg:block absolute left-0 bottom-0 pl-4 pb-4;
+    }
+
+    .movie-item__title-in__heading {
+        @apply text-white text-xl group-hover:text-red dark:group-hover:text-yellow;
+    }
+
+    .celebrity-item {
+        @apply p-2 flex gap-2 items-center;
+    }
+
+    .celebrity-name {
+        @apply text-black dark:text-white;
+    }
+
+    .celebrity-job {
+        @apply font-light text-black dark:text-text;
+    }
+
+    .movie-slide-item {
+        @apply p-2 flex gap-2 items-center bg-light-secondary dark:bg-dark-secondary;
+    }
+
+    .movie-slide-item.selected {
+        @apply bg-light-selected dark:bg-dark-selected;
+    }
+
+    .movie-slide-item-time {
+        @apply text-black dark:text-text font-light;
+    }
+
+    .footer-section {
+        @apply flex flex-col gap-5 basis-1/5;
+    }
+
+    .footer-section__header {
+        @apply text-white text-lg;
+    }
+
+    .footer-section__ul {
+        @apply flex flex-col items-baseline gap-3 font-light;
+    }
+
+    .sign-up__input {
+        @apply block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5;
+    }
+
+    /* end region main page */
+
+    /* region favorite-movies page */
+
+    .movie-list__card {
+        @apply flex gap-3 flex-col items-center md:flex-row text-black dark:text-text;
+    }
+
+    .form-option {
+        @apply bg-light-secondary dark:bg-dark-secondary text-black dark:text-text;
+    }
+
+    /* end region favorite-movies page */
+
+    /* region single-movie page */
+
+    .sidebar-button {
+        @apply w-[90%] h-11 rounded-sm px-5 py-3 flex justify-center gap-4 before:w-4 hover:after:content-[''] flip-button;
+    }
+
+    .circle-border {
+        @apply flex items-center justify-center w-12 h-12 before:w-[16px] before:h-[16px] border-red border-2 rounded-full box-border before:text-center;
+    }
+
+    .single-movie-tab {
+        @apply p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow;
+    }
+
+    .single-movie-tab.selected {
+        @apply text-red dark:text-yellow border-b-2 border-red dark:border-yellow p-2;
+    }
+
+    .movie-item-hover {
+        @apply hidden group-hover:flex absolute left-0 bottom-0 w-full h-full shadow-inset-custom;
+    }
+
+    .cast-card {
+        @apply flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between items-center;
+    }
+
+    .cast-name {
+        @apply text-blue item-hover hover:cursor-pointer;
+    }
+
+    .read-more-button-container {
+        @apply movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
+    }
+
+    .keyword-span {
+        @apply bg-dark-triority rounded-sm p-1 font-extralight text-xs item-hover;
+    }
+
+    /* end region single-movie page */
+
+    /* region profile page */
+
+    .profile-input {
+        @apply block w-full bg-white border-[1px] border-black dark:border-0 dark:bg-dark-triority placeholder-text text-text rounded-sm px-5 py-3 placeholder:font-light mb-5 text-xs;
+    }
+
+    .profile-input.disabled {
+        @apply disabled:bg-light-secondary dark:disabled:bg-dark-primary;
+    }
+
+    /* end region profile page */
 }
