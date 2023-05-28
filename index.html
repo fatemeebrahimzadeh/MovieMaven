@@ -66,7 +66,7 @@
               <a href="#">
                 <img
                   class="!max-w-[100px] sm:!max-w-[119px]"
-                  src="assets/images/logo.png"
+                  src="./assets/images/logo.png"
                   alt="logo"
                 />
               </a>
@@ -91,7 +91,7 @@
                 >
                   <li>
                     <a
-                      href="#"
+                      href="./index.html"
                       class="block py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0"
                       aria-current="page"
                       >HOME</a
@@ -111,7 +111,7 @@
                     <!-- Dropdown menu -->
                     <div
                       id="dropdownNavbar"
-                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.75rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.75rem] lg:top-[1.1rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
                     >
                       <ul
                         class="py-2 text-sm text-gray-400"
@@ -155,7 +155,7 @@
                     <!-- Dropdown menu -->
                     <div
                       id="dropdownNavbar"
-                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] lg:top-[1.1rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
                     >
                       <ul
                         class="py-2 text-sm text-gray-400"
@@ -213,7 +213,7 @@
                     <!-- Dropdown menu -->
                     <div
                       id="dropdownNavbar"
-                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
+                      class="z-10 hidden group-hover:inline-block group-hover:absolute top-[1.5rem] lg:top-[1.1rem] -left-10 font-normal divide-y rounded-lg shadow w-44 bg-dark-triority divide-gray-600"
                     >
                       <ul
                         class="py-2 text-sm text-gray-400"
@@ -222,7 +222,7 @@
                         <li>
                           <button
                             type="button"
-                            class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                            class="inline-flex w-full px-4 py-2 text-sm hover:text-red dark:hover:text-yellow"
                           >
                             <div class="inline-flex items-center">
                               <img
@@ -237,7 +237,7 @@
                         <li>
                           <button
                             type="button"
-                            class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                            class="inline-flex w-full px-4 py-2 text-sm hover:text-red dark:hover:text-yellow"
                           >
                             <div class="inline-flex items-center">
                               <img
@@ -255,7 +255,7 @@
                   <li>
                     <button
                       id="theme-toggle"
-                      class="flex items-center justify-between w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:p-0 lg:w-auto"
+                      class="flex items-center justify-between min-h-[36px] w-full py-2 pl-3 pr-4 hover:text-red dark:hover:text-yellow lg:min-h-full lg:p-0 lg:w-auto"
                     >
                       <i
                         id="theme-toggle-dark-icon"
@@ -647,9 +647,11 @@
                       src="./assets/images/mv-item1.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -674,9 +676,11 @@
                       src="./assets/images/mv-item2.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -701,9 +705,11 @@
                       src="./assets/images/mv-item3.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -728,9 +734,11 @@
                       src="./assets/images/mv-item4.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -791,9 +799,11 @@
                       src="./assets/images/mv-item5.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -818,9 +828,11 @@
                       src="./assets/images/mv-item6.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -845,9 +857,11 @@
                       src="./assets/images/mv-item7.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -872,9 +886,11 @@
                       src="./assets/images/mv-item8.jpg"
                     />
                     <div
-                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full lg:group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
+                      class="movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop"
                     >
-                      <button class="button">READ MORE</button>
+                      <a class="button z-10" href="./single-movie.html">
+                        READ MORE
+                      </a>
                     </div>
                     <div
                       class="movie-item__title-in hidden lg:block absolute left-0 bottom-0 pl-4 pb-4"
@@ -1256,7 +1272,7 @@
               </p>
             </div>
           </section>
-          <section class="grid gap-5 basis-1/5">
+          <section class="flex flex-col gap-5 basis-1/5">
             <h4 class="text-white text-lg">Resources</h4>
             <ul class="flex flex-col items-baseline gap-3">
               <li>
@@ -1303,7 +1319,7 @@
               </li>
             </ul>
           </section>
-          <section class="grid gap-5 basis-1/5">
+          <section class="flex flex-col gap-5 basis-1/5">
             <h4 class="text-white text-lg">Legal</h4>
             <ul class="flex flex-col items-baseline gap-3">
               <li>
@@ -1329,19 +1345,19 @@
               </li>
             </ul>
           </section>
-          <section class="grid gap-5 basis-1/5">
+          <section class="flex flex-col gap-5 basis-1/5">
             <h4 class="text-white text-lg">Account</h4>
             <ul class="flex flex-col items-baseline gap-3">
               <li>
                 <a
-                  href="#"
+                  href="./profile.html"
                   class="hover:text-red dark:hover:text-yellow font-light"
                   >My Account</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="./watch-list.html"
                   class="hover:text-red dark:hover:text-yellow font-light"
                   >Watchlist</a
                 >
@@ -1390,62 +1406,6 @@
         </div>
       </div>
     </footer>
-    <!-- edit profile form popup -->
-    <!-- add flex to work -->
-    <section
-      class="hidden z-50 overlay fixed w-screen h-screen top-0 left-0 items-center justify-center bg-dark-backdrop font-dosis"
-    >
-      <div class="signup-content bg-white w-96 flex flex-col items-center p-5">
-        <h2 class="text-black text-2xl font-dosis">PROFILE</h2>
-        <form action="#" class="w-full p-5">
-          <label class="text-black" for="username">USERNAME:</label>
-          <input
-            name="username"
-            type="text"
-            value="fatemeebrahimzadeh"
-            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
-            required
-          />
-          <label class="text-black" for="email">YOUR EMAIL:</label>
-          <input
-            name="email"
-            type="email"
-            disabled
-            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
-            value="fateme.ebrahimzadeh20@gmail.com"
-            required
-          />
-          <label class="text-black" for="firstname">FIRSTNAME:</label>
-          <input
-            name="firstname"
-            type="text"
-            value="fateme"
-            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
-            required
-          />
-          <label class="text-black" for="lastname">LASTNAME:</label>
-          <input
-            name="lastname"
-            type="text"
-            value="ebrahimzade"
-            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
-            required
-          />
-          <label class="text-black" for="address">ADDRESS:</label>
-          <input
-            name="address"
-            type="text"
-            value="ISF, Bahonar st. "
-            class="block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5"
-            required
-          />
-          <button class="w-full bg-red px-5 py-3 text-white" type="submit">
-            EDIT PROFILE
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- end edit profile popup -->
     <!-- signup form popup -->
     <!-- add flex to work -->
     <section
