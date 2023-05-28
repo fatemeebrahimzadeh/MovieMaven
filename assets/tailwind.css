@@ -166,4 +166,44 @@
     }
 
     /* end region favorite-movies page */
+
+    /* region single-movie page */
+
+    .sidebar-button {
+        @apply w-[90%] h-11 rounded-sm px-5 py-3 flex justify-center gap-4 before:w-4 hover:after:content-[''] flip-button;
+    }
+
+    .circle-border {
+        @apply flex items-center justify-center w-12 h-12 before:w-[16px] before:h-[16px] border-red border-2 rounded-full box-border before:text-center;
+    }
+
+    .single-movie-tab {
+        @apply p-2 hover:text-red hover:dark:text-yellow hover:border-b-2 hover:border-red hover:dark:border-yellow;
+    }
+
+    .single-movie-tab.selected {
+        @apply text-red dark:text-yellow border-b-2 border-red dark:border-yellow p-2;
+    }
+
+    .movie-item-hover {
+        @apply hidden group-hover:flex absolute left-0 bottom-0 w-full h-full shadow-inset-custom;
+    }
+
+    .cast-card {
+        @apply flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between items-center;
+    }
+
+    .cast-name {
+        @apply text-blue item-hover hover:cursor-pointer;
+    }
+
+    .read-more-button-container {
+        @apply movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
+    }
+
+    .keyword-span {
+        @apply bg-dark-triority rounded-sm p-1 font-extralight text-xs item-hover;
+    }
+
+    /* end region single-movie page */
 }
