@@ -19,8 +19,7 @@
 /* scrollbar */
 
 @layer components {
-
-    .text{
+    .text {
         @apply text-black dark:text-white;
     }
 
@@ -60,95 +59,111 @@
         @apply overflow-hidden line-clamp-3 leading-normal;
     }
 
-    .drop-down-nav-btn{
+    /* end region main page */
+
+    .drop-down-nav-btn {
         @apply flex items-center justify-between w-full py-2 pl-3 pr-4 group-hover:text-red dark:group-hover:text-yellow lg:p-0 lg:w-auto;
     }
 
-    .drop-down-nav-icon{
+    .drop-down-nav-icon {
         @apply ml-1 text-black dark:text-text group-hover:text-red group-hover:dark:text-yellow;
     }
 
-    .theme-toggler-icon{
+    .theme-toggler-icon {
         @apply ml-1 text-black dark:text-text hover:text-red hover:dark:text-yellow;
     }
 
-    .status-btn{
+    .status-btn {
         @apply inline-flex w-full px-4 py-2 text-sm text-gray-400 hover:bg-gray-600 hover:text-white;
     }
 
-    .status-btn-text{
+    .status-btn-text {
         @apply inline-flex items-center;
     }
 
-    .slider-image{
+    .slider-image {
         @apply flex-shrink-0 object-cover rounded-lg min-w-[200px] sm:min-w-[285px];
     }
 
-    .slider-item__title-in{
+    .slider-item__title-in {
         @apply absolute left-0 bottom-0 ml-4 mb-4;
     }
 
-    .slider-item__title-in__status{
+    .slider-item__title-in__status {
         @apply rounded-sm px-1 text-white font-bold;
     }
 
-    .slider-item__title-in__heading{
+    .slider-item__title-in__heading {
         @apply text-white text-xl group-hover:text-red dark:group-hover:text-yellow;
     }
 
-    .tab-link{
+    .tab-link {
         @apply hover:text-red dark:hover:text-yellow;
     }
 
-    .movie-item__hover{
+    .movie-item__hover {
         @apply hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
     }
 
-    .movie-item__title-in{
+    .movie-item__title-in {
         @apply hidden lg:block absolute left-0 bottom-0 pl-4 pb-4;
     }
 
-    .movie-item__title-in__heading{
+    .movie-item__title-in__heading {
         @apply text-white text-xl group-hover:text-red dark:group-hover:text-yellow;
     }
 
-    .celebrity-item{
+    .celebrity-item {
         @apply p-2 flex gap-2 items-center;
     }
 
-    .celebrity-name{
+    .celebrity-name {
         @apply text-black dark:text-white;
     }
 
-    .celebrity-job{
+    .celebrity-job {
         @apply font-light text-black dark:text-text;
     }
 
-    .movie-slide-item{
+    .movie-slide-item {
         @apply p-2 flex gap-2 items-center bg-light-secondary dark:bg-dark-secondary;
     }
 
     .movie-slide-item.selected {
         @apply bg-light-selected dark:bg-dark-selected;
-      }
+    }
 
-    .movie-slide-item-time{
+    .movie-slide-item-time {
         @apply text-black dark:text-text font-light;
     }
 
-    .footer-section{
+    .footer-section {
         @apply flex flex-col gap-5 basis-1/5;
     }
 
-    .footer-section__header{
+    .footer-section__header {
         @apply text-white text-lg;
     }
 
-    .footer-section__ul{
+    .footer-section__ul {
         @apply flex flex-col items-baseline gap-3 font-light;
     }
 
-    .sign-up__input{
+    .sign-up__input {
         @apply block w-full text-sm bg-transparent placeholder-text text-text border-[1px] rounded-sm px-5 py-3 placeholder:font-extralight mb-5;
     }
+
+    /* end region main page */
+
+    /* region favorite-movies page */
+
+    .movie-list__card {
+        @apply flex gap-3 flex-col items-center md:flex-row text-black dark:text-text;
+    }
+
+    .form-option {
+        @apply bg-light-secondary dark:bg-dark-secondary text-black dark:text-text;
+    }
+
+    /* end region favorite-movies page */
 }
