@@ -4065,14 +4065,6 @@ video {
   }
 }
 
-.placeholder\:font-extralight::-moz-placeholder {
-  font-weight: 200;
-}
-
-.placeholder\:font-extralight::placeholder {
-  font-weight: 200;
-}
-
 .placeholder\:font-light::-moz-placeholder {
   font-weight: 300;
 }
@@ -4130,11 +4122,6 @@ video {
   cursor: pointer;
 }
 
-.hover\:bg-gray-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -4152,11 +4139,6 @@ video {
 .hover\:text-red:hover {
   --tw-text-opacity: 1;
   color: rgb(221 0 63 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
