@@ -97,10 +97,6 @@
         @apply text-white text-xl group-hover:text-red dark:group-hover:text-yellow;
     }
 
-    .tab-link {
-        @apply hover:text-red dark:hover:text-yellow;
-    }
-
     .movie-item__hover {
         @apply hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
     }
