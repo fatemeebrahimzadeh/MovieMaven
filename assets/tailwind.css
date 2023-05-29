@@ -197,10 +197,6 @@
         @apply text-blue item-hover hover:cursor-pointer;
     }
 
-    .read-more-button-container {
-        @apply movie-item-hover hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
-    }
-
     .keyword-span {
         @apply bg-dark-triority rounded-sm p-1 font-extralight text-xs item-hover;
     }
