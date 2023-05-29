@@ -832,16 +832,6 @@ video {
   color: rgb(220 248 54 / var(--tw-text-opacity));
 }
 
-.tab-link:hover {
-  --tw-text-opacity: 1;
-  color: rgb(221 0 63 / var(--tw-text-opacity));
-}
-
-:is(.dark .tab-link:hover) {
-  --tw-text-opacity: 1;
-  color: rgb(220 248 54 / var(--tw-text-opacity));
-}
-
 .movie-item__hover {
   position: absolute;
   left: 0px;
